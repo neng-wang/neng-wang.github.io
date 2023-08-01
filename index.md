@@ -305,7 +305,7 @@ news:
       - time: Jul 10, 2023
         note: We get the Best-in-Class Dexterity in RoboCup2023;
       - time: Jun 22, 2023
-        note: Our paper <a href="https://npucvr.github.io/MUNet" target="_blank">InsMOS</a> accepted to IROS 2023 &#128079;
+        note: Our paper <a href="https://github.com/nubot-nudt/InsMOS" target="_blank">InsMOS</a> accepted to IROS 2023 &#128079;
       # - time: Jul 18, 2023
       #   note: One paper accepted to ICCV 2023 &#127867;&#127881;
       # - time: Feb 05, 2023
@@ -345,7 +345,7 @@ news:
 <!-- About me -->
 {% include image.html url="images/wangneng.jpeg" caption="" width="190px" align="right" %}
 
-I am a 2nd year Ph.D student at [NuBot] group, National University of Defense Technology([NUDT]), with the supervision of Prof. Zhiqiang Zheng and with the collaborative guidance of Prof. Huimin Lu and [Assoc. Prof. Xieyuanli Chen]. My current research focuses on Point Cloud Understanding and SLAM. Previously, I studied at Southwest Petroleum University([SWPU]) and obtained a bachelor’s degree, with the honor of Outstanding Graduate. I then direct entry for doctoral program at [NUDT].
+I am a 2nd year Ph.D student at [NuBot] group, National University of Defense Technology([NUDT]). I am under the supervision of Prof. Zhiqiang Zheng and receive collaborative guidance from Prof. Huimin Lu and [Assoc. Prof. Xieyuanli Chen]. My current research focuses on Point Cloud Understanding and SLAM. Previously, I studied at Southwest Petroleum University([SWPU]) and obtained a bachelor’s degree, with the honor of Outstanding Graduate. I then direct entry for doctoral program at [NUDT].
 
 
 
@@ -422,9 +422,9 @@ Robotics, SLAM, Point Cloud Understanding
 
 ## Selected Publications
 <!-- Will upload soon... -->
-This part will be updated as soon as my on-going projects are approved to be made public which should be quite exciting.<br/>
+<!-- This part will be updated as soon as my on-going projects are approved to be made public which should be quite exciting.<br/> -->
 
-{% assign thumbnail="left" %}
+<!-- {% assign thumbnail="left" %} -->
 {% for pub in page.pubs %}
 {% if pub.image %}
 {% include image.html url=pub.image caption="" height="100px" align=thumbnail %}
