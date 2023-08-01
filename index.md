@@ -326,12 +326,14 @@ news:
 <!-- About me -->
 {% include image.html url="images/wangneng.jpeg" caption="" width="190px" align="right" %}
 
-I am a 2nd year Ph.D student at [NuBot] group, National University of Defense Technology([NUDT]), with the supervision of Prof. Zhiqiang Zheng. My current research focus on Point Cloud Understanding and SLAM.
+I am a 2nd year Ph.D student at [NuBot] group, National University of Defense Technology([NUDT]), with the supervision of Prof. Zhiqiang Zheng and with the collaborative guidance of Prof. Huimin Lu and [Assoc. Prof. Xieyuanli Chen]. My current research focuses on Point Cloud Understanding and SLAM. Previously, I studied at Southwest Petroleum University([SWPU]) and obtained a bachelor’s degree, with the honor of Outstanding Graduate. I then direct entry for doctoral program at [NUDT].
+
+
 
 ----The following is the experience led by the Jiadai Sun, which has not been modified yet----
 
 
-I obtained my Master's degree in April 2023 from Northwestern Polytechnical University ([NWPU]), with the supervision of [Prof. Yuchao Dai], once again with the honor of Outstanding Graduate.
+<!-- I obtained my Master's degree in April 2023 from Northwestern Polytechnical University ([NWPU]), with the supervision of [Prof. Yuchao Dai], once again with the honor of Outstanding Graduate.
 And I received my Bachelor's degree in July 2020 from the [School of Computer Science] of NWPU, with the honor of Outstanding Graduate.
 
 Currently, I am a Perception Algorithm Engineer at Intelligent Driving Technology (IDT) of Baidu Inc.
@@ -341,9 +343,9 @@ I used to be a Research Intern on topics related to 3D Scene Reconstruction and 
 
 During my undergraduate study, I worked in [CVR-Lab] supervised by [Prof. Yuchao Dai] as a Research Assistant on LiDAR/Visual 3D Registration and Reconstruction, Dual LiDAR calibration, etc.
 I've served in the NWPU Dancing Robot Research And Training Base - Rescue Robot Group [Team - Explorer] for two years as a Robot Software Engineer and Team Leader since July, 2017. 
-As usual, we participate in *RoboCup Rescue Robot League Regional Open Competitions*, and my main contribution is about SLAM, Robot Localization and Navigation, Path Planning, etc.
+As usual, we participate in *RoboCup Rescue Robot League Regional Open Competitions*, and my main contribution is about SLAM, Robot Localization and Navigation, Path Planning, etc. -->
 
-Github: [MaxChanger] \| [Google Scholar] \| Email: [sunjiadai AT foxmail dot com], [sunjiadai AT mail.nwpu.edu.cn]
+Github: [neng-wang]  \| Email: nwang@nudt.edu.cn, neng.wang@hotmail.com
 
 <!-- <font color='#318CE7'><b>- I am looking for a job opportunity about 3DVision, free to contact me if you think we are a good match.</b></font> -->
 
@@ -462,7 +464,9 @@ Minister of Public Relations Department of Computer Volunteer Service Team \| *1
 <!--Hyperlinks -->
 [NuBot]: https://github.com/nubot-nudt
 [NUDT]: https://www.nudt.edu.cn/
-
+[SWPU]: https://www.swpu.edu.cn/en/
+[Assoc. Prof. Xieyuanli Chen]: http://xieyuanli-chen.com/
+[neng-wang]: https://github.com/neng-wang
 
 
 
