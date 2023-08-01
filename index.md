@@ -91,236 +91,255 @@ activities:
                 -- Connected community organizations to organize and arrange free computer maintenance activities"
 
 pubs:
-    - title:   "Is LiDAR Really Needed? Digging into Depth Priors for Outdoor Neural Radiance Fields"
-      author:  "Chen Wang, **Jiadai Sun**, Lina Liu, Chenming Wu, Zhelun Shen, Liangjun Zhang"
-      journal: "Proceedings of the ACM International Conference on Multimedia (ACM MM)"
-      year:    "2023"
-      media:
-        - name: "Page"
-        - name: "Paper"
-        - name: "arXiv"
-
-    - title:   "Forward Flow for Novel View Synthesis of Dynamic Scenes"
-      author:  "Xiang Guo, **Jiadai Sun**, Yuchao Dai, Guanying Chen, Xiaoqing Ye, Xiao Tan, Errui Ding, Yumeng Zhang, Jingdong Wang"
-      journal: "Proceedings of the International Conference on Computer Vision (ICCV)"
-      year:    "2023"
-      media:
-        - name: "Page"
-        - name: "Paper"
-        - name: "arXiv"
-
-    - title:   "MapNeRF: Incorporating Map Priors into Neural Radiance Fields for Driving View Simulation"
-      author:  "Chenming Wu, **Jiadai Sun**, Zhelun Shen, Liangjun Zhang"
+    - title:   "InsMOS: Instance-Aware Moving Object Segmentation in LiDAR Data"
+      author:  "**Neng Wang**, Chenghao Shi, Ruibin Guo, Huimin Lu, Zhiqiang Zheng, Xieyuanli Chen"
       journal: "Proceedings of the IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)"
       year:    "2023"
+      image:   "/images/InsMOS.gif"
       media:
         - name: "Page"
+          # url:  https://npucvr.github.io/MotionSeg3D/
         - name: "Paper"
+          # url:  https://ieeexplore.ieee.org/document/9981210/
         - name: "arXiv"
-          url:  "https://arxiv.org/abs/2307.14981"
-
-    - title:   "Efficient Spatial-Temporal Information Fusion for LiDAR-based 3D Moving Object Segmentation"
-      author:  "**Jiadai Sun**, Yuchao Dai, Xianjing Zhang, Jintao Xu, Rui Ai, Weihao Gu, Xieyuanli Chen"
-      journal: "Proceedings of the IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)"
-      year:    "2022"
-      # image:   "/images/no.svg"
-      media:
-        - name: "Page"
-          url:  https://npucvr.github.io/MotionSeg3D/
-        - name: "Paper"
-          url:  https://ieeexplore.ieee.org/document/9981210/
-        - name: "arXiv"
-          url: https://arxiv.org/abs/2207.02201
+          url: https://arxiv.org/abs/2303.03909
         - name: "Code"
-          url: https://github.com/haomo-ai/MotionSeg3D
+          url: https://github.com/nubot-nudt/InsMOS
         - name: "Data"
-          url: https://github.com/haomo-ai/MotionSeg3D/blob/master/config/kitti_road_mos.md
+          # url: https://github.com/haomo-ai/MotionSeg3D/blob/master/config/kitti_road_mos.md
 
-    - title:   "MUNet: Motion Uncertainty-aware Semi-supervised Video Object Segmentation"
-      author:  "**Jiadai Sun**\\*, Yuxin Mao\\*, Yuchao Dai, Yiran Zhong, Jianyuan Wang (\\* equal contribution)"
-      journal: Pattern Recognition (PR)
-      # journal: "arXiv preprint arXiv:2111.14646"
-      # note:    "in submission"
-      year:    "2023"
-      # image:   "/images/no.svg"
-      media:
-        - name: "Page"
-          url:  https://npucvr.github.io/MUNet/
-        - name: "Paper"
-          url:  https://www.sciencedirect.com/science/article/pii/S0031320323001000
-        - name: "arXiv"
-          url:  "https://arxiv.org/abs/2111.14646"
-        - name: "Code"
+    # - title:   "Is LiDAR Really Needed? Digging into Depth Priors for Outdoor Neural Radiance Fields"
+    #   author:  "Chen Wang, **Jiadai Sun**, Lina Liu, Chenming Wu, Zhelun Shen, Liangjun Zhang"
+    #   journal: "Proceedings of the ACM International Conference on Multimedia (ACM MM)"
+    #   year:    "2023"
+    #   media:
+    #     - name: "Page"
+    #     - name: "Paper"
+    #     - name: "arXiv"
 
-    - title:   "MFF-Net: Towards Efficient Monocular Depth Completion With Multi-Modal Feature Fusion"
-      author:  "Lina Liu, Xibin Song, **Jiadai Sun**, Xiaoyang Lyu, Lin Li, Yong Liu, Liangjun Zhang"
-      journal: "IEEE Robotics and Automation Letters (RA-L)"
-      year:    "2023"
-      media:
-        - name: "Paper"
-          url: "https://ieeexplore.ieee.org/document/10008014"
+    # - title:   "Forward Flow for Novel View Synthesis of Dynamic Scenes"
+    #   author:  "Xiang Guo, **Jiadai Sun**, Yuchao Dai, Guanying Chen, Xiaoqing Ye, Xiao Tan, Errui Ding, Yumeng Zhang, Jingdong Wang"
+    #   journal: "Proceedings of the International Conference on Computer Vision (ICCV)"
+    #   year:    "2023"
+    #   media:
+    #     - name: "Page"
+    #     - name: "Paper"
+    #     - name: "arXiv"
 
-    - title:   "Neural Deformable Voxel Grid for Fast Optimization of Dynamic View Synthesis"
-      author:  "Xiang Guo, Guanying Chen, Yuchao Dai, Xiaoqing Ye, **Jiadai Sun**, Xiao Tan, Errui Ding"
-      journal: "Proceedings of the Asian Conference on Computer Vision (ACCV) [Oral]"
-      year:    "2022"
-      # image:   "/images/no.svg"
-      media:
-        - name: "Page"
-          url:  https://npucvr.github.io/NDVG/
-        - name: "arXiv"
-          url:  "https://arxiv.org/abs/2206.07698"
-        - name: "Code"
-          url: "https://github.com/SeanGuo063/NDVG"
+    # - title:   "MapNeRF: Incorporating Map Priors into Neural Radiance Fields for Driving View Simulation"
+    #   author:  "Chenming Wu, **Jiadai Sun**, Zhelun Shen, Liangjun Zhang"
+    #   journal: "Proceedings of the IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)"
+    #   year:    "2023"
+    #   media:
+    #     - name: "Page"
+    #     - name: "Paper"
+    #     - name: "arXiv"
+    #       url:  "https://arxiv.org/abs/2307.14981"
 
-    - title:   "CU-Net: LiDAR Depth-only Completion with Coupled U-Net"
-      author:  "Yufei Wang, Yuchao Dai, Qi Liu, Peng Yang, **Jiadai Sun**, Bo Li"
-      journal: "IEEE Robotics and Automation Letters (RA-L)"
-      year:    "2022"
-      # image:   "/images/no.svg"
-      media:
-        - name: "Page"
-          url:  https://npucvr.github.io/CUNet
-        - name: "Paper"
-          url: "https://ieeexplore.ieee.org/document/9866514"
-        - name: "arXiv"
-          url: "https://arxiv.org/abs/2210.14898"
-        - name: "Code"
-          url: https://github.com/YufeiWang777/CU-Net
-    - title:   "End-to-end Learning the Partial Permutation Matrix for Robust 3D Point Cloud Registration"
-      author:  "Zhiyuan Zhang, **Jiadai Sun**, Yuchao Dai, Dingfu Zhou, Xibin Song, Mingyi He"
-      journal: "Proceedings of the AAAI Conference on Artificial Intelligence (AAAI)"
-      year:    "2022"
-      # image:   "/images/no.svg"
-      media:
-        - name: "Page"
-          url:  https://npucvr.github.io/SHM
-        - name: "Paper"
-          url: "https://aaai-2022.virtualchair.net/poster_aaai7418"
-        - name: "arXiv"
-          url:  "https://arxiv.org/abs/2110.15250"
-        - name: "Code"
-          url:  "https://github.com/MrZ19/SHM"
-    - title:   "Self-supervised Rigid Transformation Equivariance for Accurate 3D Point Cloud Registration"
-      author:  "Zhiyuan Zhang, **Jiadai Sun**, Yuchao Dai, Dingfu Zhou, Xibin Song, Mingyi He"
-      journal: "Pattern Recognition (PR)"
-      year:    "2022"
-      # image:   "/images/no.svg"
-      media:
-        - name: "Page"
-          url:  https://npucvr.github.io/RTE
-        - name: "Paper"
-          url: "https://doi.org/10.1016/j.patcog.2022.108784"
-        # - name: "arXiv"
-        - name: "Code"
-          url:  "https://github.com/MrZ19/RTE"
+    # - title:   "Efficient Spatial-Temporal Information Fusion for LiDAR-based 3D Moving Object Segmentation"
+    #   author:  "**Jiadai Sun**, Yuchao Dai, Xianjing Zhang, Jintao Xu, Rui Ai, Weihao Gu, Xieyuanli Chen"
+    #   journal: "Proceedings of the IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)"
+    #   year:    "2022"
+    #   # image:   "/images/no.svg"
+    #   media:
+    #     - name: "Page"
+    #       url:  https://npucvr.github.io/MotionSeg3D/
+    #     - name: "Paper"
+    #       url:  https://ieeexplore.ieee.org/document/9981210/
+    #     - name: "arXiv"
+    #       url: https://arxiv.org/abs/2207.02201
+    #     - name: "Code"
+    #       url: https://github.com/haomo-ai/MotionSeg3D
+    #     - name: "Data"
+    #       url: https://github.com/haomo-ai/MotionSeg3D/blob/master/config/kitti_road_mos.md
 
-    - title:   "VRNet: Learning the Rectified Virtual Corresponding Points for 3D Point Cloud Registration"
-      author:  "Zhiyuan Zhang, **Jiadai Sun**, Yuchao Dai, Bin Fan, Mingyi He"
-      journal: "IEEE Transactions on Circuits and Systems for Video Technology (TCSVT)"
-      year:    "2022"
-      doi:     
-      # image:   "/images/no.svg"
-      media:
-        - name: "Page"
-          url:  https://npucvr.github.io/VRNet
-        - name: "Paper"
-          url:  "https://ieeexplore.ieee.org/abstract/document/9681904/" #"https://doi.org/10.1109/TCSVT.2022.3143151"
-        - name: "arXiv"
-          url:  "https://arxiv.org/abs/2203.13241"
-        - name: "Code"
-          url:  "https://github.com/MrZ19/VRNet-repo"
+    # - title:   "MUNet: Motion Uncertainty-aware Semi-supervised Video Object Segmentation"
+    #   author:  "**Jiadai Sun**\\*, Yuxin Mao\\*, Yuchao Dai, Yiran Zhong, Jianyuan Wang (\\* equal contribution)"
+    #   journal: Pattern Recognition (PR)
+    #   # journal: "arXiv preprint arXiv:2111.14646"
+    #   # note:    "in submission"
+    #   year:    "2023"
+    #   # image:   "/images/no.svg"
+    #   media:
+    #     - name: "Page"
+    #       url:  https://npucvr.github.io/MUNet/
+    #     - name: "Paper"
+    #       url:  https://www.sciencedirect.com/science/article/pii/S0031320323001000
+    #     - name: "arXiv"
+    #       url:  "https://arxiv.org/abs/2111.14646"
+    #     - name: "Code"
 
-    - title:   "Learning a Task-specific Descriptor for Robust Matching of 3D Point Clouds"
-      author:  "Zhiyuan Zhang, Yuchao Dai, Bin Fan, **Jiadai Sun**, Mingyi He"
-      journal: "IEEE Transactions on Circuits and Systems for Video Technology (TCSVT)"
-      year:    "2022"
-      doi:     
-      # image:   "/images/no.svg"
-      media:
-        - name: "Page"
-          url:  https://npucvr.github.io/TSD
-        - name: "Paper"
-          url:  "https://ieeexplore.ieee.org/abstract/document/9847261/"
-        - name: "arXiv"
-          url:  "https://arxiv.org/abs/2210.14899"
-        - name: "Code"
-          url:  "https://github.com/MrZ19/TSD"
+    # - title:   "MFF-Net: Towards Efficient Monocular Depth Completion With Multi-Modal Feature Fusion"
+    #   author:  "Lina Liu, Xibin Song, **Jiadai Sun**, Xiaoyang Lyu, Lin Li, Yong Liu, Liangjun Zhang"
+    #   journal: "IEEE Robotics and Automation Letters (RA-L)"
+    #   year:    "2023"
+    #   media:
+    #     - name: "Paper"
+    #       url: "https://ieeexplore.ieee.org/document/10008014"
 
-    - title:   "Searching Dense Point Correspondences via Permutation Matrix Learning"
-      author:  "Zhiyuan Zhang, **Jiadai Sun**, Yuchao Dai, Bin Fan, Qi Liu"
-      journal: "IEEE Signal Processing Letters (SPL)"
-      year:    "2022"
-      doi:     
-      # image:   "/images/no.svg"
-      media:
-        - name: "Paper"
-          url: "https://ieeexplore.ieee.org/abstract/document/9769864"
-        - name: "arXiv"
-          url: "https://arxiv.org/abs/2210.14897"
+    # - title:   "Neural Deformable Voxel Grid for Fast Optimization of Dynamic View Synthesis"
+    #   author:  "Xiang Guo, Guanying Chen, Yuchao Dai, Xiaoqing Ye, **Jiadai Sun**, Xiao Tan, Errui Ding"
+    #   journal: "Proceedings of the Asian Conference on Computer Vision (ACCV) [Oral]"
+    #   year:    "2022"
+    #   # image:   "/images/no.svg"
+    #   media:
+    #     - name: "Page"
+    #       url:  https://npucvr.github.io/NDVG/
+    #     - name: "arXiv"
+    #       url:  "https://arxiv.org/abs/2206.07698"
+    #     - name: "Code"
+    #       url: "https://github.com/SeanGuo063/NDVG"
 
-    - title:   "A Representation Separation Perspective to Correspondences-free Unsupervised 3D Point Cloud Registration"
-      author:  "Zhiyuan Zhang, **Jiadai Sun**, Yuchao Dai, Dingfu Zhou, Xibin Song, Mingyi He"
-      journal: "IEEE Geoscience and Remote Sensing Letters (GRSL)"
-      # note:    "(presented at Oz)"
-      year:    "2021"
-      # image:   "/images/no.svg"
-      media:
-        - name: "Paper"
-          url:  "https://ieeexplore.ieee.org/abstract/document/9638480" #  "https://doi.org/10.1109/LGRS.2021.3132926"
-        - name: "arXiv"
-          url:  "https://arxiv.org/abs/2203.13239"
-        # - name: "Code"
+    # - title:   "CU-Net: LiDAR Depth-only Completion with Coupled U-Net"
+    #   author:  "Yufei Wang, Yuchao Dai, Qi Liu, Peng Yang, **Jiadai Sun**, Bo Li"
+    #   journal: "IEEE Robotics and Automation Letters (RA-L)"
+    #   year:    "2022"
+    #   # image:   "/images/no.svg"
+    #   media:
+    #     - name: "Page"
+    #       url:  https://npucvr.github.io/CUNet
+    #     - name: "Paper"
+    #       url: "https://ieeexplore.ieee.org/document/9866514"
+    #     - name: "arXiv"
+    #       url: "https://arxiv.org/abs/2210.14898"
+    #     - name: "Code"
+    #       url: https://github.com/YufeiWang777/CU-Net
+    # - title:   "End-to-end Learning the Partial Permutation Matrix for Robust 3D Point Cloud Registration"
+    #   author:  "Zhiyuan Zhang, **Jiadai Sun**, Yuchao Dai, Dingfu Zhou, Xibin Song, Mingyi He"
+    #   journal: "Proceedings of the AAAI Conference on Artificial Intelligence (AAAI)"
+    #   year:    "2022"
+    #   # image:   "/images/no.svg"
+    #   media:
+    #     - name: "Page"
+    #       url:  https://npucvr.github.io/SHM
+    #     - name: "Paper"
+    #       url: "https://aaai-2022.virtualchair.net/poster_aaai7418"
+    #     - name: "arXiv"
+    #       url:  "https://arxiv.org/abs/2110.15250"
+    #     - name: "Code"
+    #       url:  "https://github.com/MrZ19/SHM"
+    # - title:   "Self-supervised Rigid Transformation Equivariance for Accurate 3D Point Cloud Registration"
+    #   author:  "Zhiyuan Zhang, **Jiadai Sun**, Yuchao Dai, Dingfu Zhou, Xibin Song, Mingyi He"
+    #   journal: "Pattern Recognition (PR)"
+    #   year:    "2022"
+    #   # image:   "/images/no.svg"
+    #   media:
+    #     - name: "Page"
+    #       url:  https://npucvr.github.io/RTE
+    #     - name: "Paper"
+    #       url: "https://doi.org/10.1016/j.patcog.2022.108784"
+    #     # - name: "arXiv"
+    #     - name: "Code"
+    #       url:  "https://github.com/MrZ19/RTE"
 
-    - title:   "Deep learning based point cloud registration: an overview"
-      author:  "Zhiyuan Zhang, Yuchao Dai, **Jiadai Sun**"
-      journal: "Virtual Reality & Intelligent Hardware"
-      year:    "2020"
-      # image:   "/images/no.svg"
-      media:
-        - name: "Paper"
-          url:  "https://www.sciencedirect.com/science/article/pii/S2096579620300383" # "https://doi.org/10.1016/j.vrih.2020.05.002"
+    # - title:   "VRNet: Learning the Rectified Virtual Corresponding Points for 3D Point Cloud Registration"
+    #   author:  "Zhiyuan Zhang, **Jiadai Sun**, Yuchao Dai, Bin Fan, Mingyi He"
+    #   journal: "IEEE Transactions on Circuits and Systems for Video Technology (TCSVT)"
+    #   year:    "2022"
+    #   doi:     
+    #   # image:   "/images/no.svg"
+    #   media:
+    #     - name: "Page"
+    #       url:  https://npucvr.github.io/VRNet
+    #     - name: "Paper"
+    #       url:  "https://ieeexplore.ieee.org/abstract/document/9681904/" #"https://doi.org/10.1109/TCSVT.2022.3143151"
+    #     - name: "arXiv"
+    #       url:  "https://arxiv.org/abs/2203.13241"
+    #     - name: "Code"
+    #       url:  "https://github.com/MrZ19/VRNet-repo"
+
+    # - title:   "Learning a Task-specific Descriptor for Robust Matching of 3D Point Clouds"
+    #   author:  "Zhiyuan Zhang, Yuchao Dai, Bin Fan, **Jiadai Sun**, Mingyi He"
+    #   journal: "IEEE Transactions on Circuits and Systems for Video Technology (TCSVT)"
+    #   year:    "2022"
+    #   doi:     
+    #   # image:   "/images/no.svg"
+    #   media:
+    #     - name: "Page"
+    #       url:  https://npucvr.github.io/TSD
+    #     - name: "Paper"
+    #       url:  "https://ieeexplore.ieee.org/abstract/document/9847261/"
+    #     - name: "arXiv"
+    #       url:  "https://arxiv.org/abs/2210.14899"
+    #     - name: "Code"
+    #       url:  "https://github.com/MrZ19/TSD"
+
+    # - title:   "Searching Dense Point Correspondences via Permutation Matrix Learning"
+    #   author:  "Zhiyuan Zhang, **Jiadai Sun**, Yuchao Dai, Bin Fan, Qi Liu"
+    #   journal: "IEEE Signal Processing Letters (SPL)"
+    #   year:    "2022"
+    #   doi:     
+    #   # image:   "/images/no.svg"
+    #   media:
+    #     - name: "Paper"
+    #       url: "https://ieeexplore.ieee.org/abstract/document/9769864"
+    #     - name: "arXiv"
+    #       url: "https://arxiv.org/abs/2210.14897"
+
+    # - title:   "A Representation Separation Perspective to Correspondences-free Unsupervised 3D Point Cloud Registration"
+    #   author:  "Zhiyuan Zhang, **Jiadai Sun**, Yuchao Dai, Dingfu Zhou, Xibin Song, Mingyi He"
+    #   journal: "IEEE Geoscience and Remote Sensing Letters (GRSL)"
+    #   # note:    "(presented at Oz)"
+    #   year:    "2021"
+    #   # image:   "/images/no.svg"
+    #   media:
+    #     - name: "Paper"
+    #       url:  "https://ieeexplore.ieee.org/abstract/document/9638480" #  "https://doi.org/10.1109/LGRS.2021.3132926"
+    #     - name: "arXiv"
+    #       url:  "https://arxiv.org/abs/2203.13239"
+    #     # - name: "Code"
+
+    # - title:   "Deep learning based point cloud registration: an overview"
+    #   author:  "Zhiyuan Zhang, Yuchao Dai, **Jiadai Sun**"
+    #   journal: "Virtual Reality & Intelligent Hardware"
+    #   year:    "2020"
+    #   # image:   "/images/no.svg"
+    #   media:
+    #     - name: "Paper"
+    #       url:  "https://www.sciencedirect.com/science/article/pii/S2096579620300383" # "https://doi.org/10.1016/j.vrih.2020.05.002"
 
 news:
     shown:
-      - time: Jul 26, 2023
-        note: One paper accepted to ACM MM 2023 &#127881;
-      - time: Jul 18, 2023
-        note: One paper accepted to ICCV 2023 &#127867;&#127881;
+      # - time: Jul 26, 2023
+      #   note: One paper accepted to ACM MM 2023 &#127881;
+      - time: Jul 10, 2023
+        note: We get the Best-in-Class Dexterity in RoboCup2023;
       - time: Jun 22, 2023
-        note: One paper accepted to IROS 2023 &#128079;
-      - time: Feb 05, 2023
-        note: <a href="https://npucvr.github.io/MUNet" target="_blank">MUNet</a> accepted to Pattern Recognition (PR) &#127867;&#127881;
-      - time: Dec 21, 2022
-        note: One paper MFF-Net accepted to RA-L &#127867;
-      - time: Sep 17, 2022
-        note: One paper (<a href="https://npucvr.github.io/NDVG/" target="_blank">NDVG</a>) accepted to ACCV 2022 Oral &#127881;
-      - time: Aug 11, 2022
-        note: One paper (<a href="https://github.com/YufeiWang777/CU-Net" target="_blank">CU-Net</a>) accepted to RA-L &#127867;
+        note: Our paper <a href="https://npucvr.github.io/MUNet" target="_blank">InsMOS</a> accepted to IROS 2023 &#128079;
+      # - time: Jul 18, 2023
+      #   note: One paper accepted to ICCV 2023 &#127867;&#127881;
+      # - time: Feb 05, 2023
+      #   note: <a href="https://npucvr.github.io/MUNet" target="_blank">MUNet</a> accepted to Pattern Recognition (PR) &#127867;&#127881;
+      # - time: Dec 21, 2022
+      #   note: One paper MFF-Net accepted to RA-L &#127867;
+      # - time: Sep 17, 2022
+      #   note: One paper (<a href="https://npucvr.github.io/NDVG/" target="_blank">NDVG</a>) accepted to ACCV 2022 Oral &#127881;
+      # - time: Aug 11, 2022
+      #   note: One paper (<a href="https://github.com/YufeiWang777/CU-Net" target="_blank">CU-Net</a>) accepted to RA-L &#127867;
  
-    hidden:
-      - time: Aug 01, 2022
-        note: One paper accepted to TCSVT &#128079; 
-      - time: Jun 30, 2022
-        note: <a href="https://github.com/haomo-ai/MotionSeg3D" target="_blank">MotionSeg3D</a> accepted to IROS 2022 &#127867;&#127881; 
-      - time: May 07, 2022
-        note: One paper accepted to Pattern Recognition (PR) &#128079; 
-      - time: Apr 30, 2022
-        note: One paper accepted to SPL
-      - time: Apr 27, 2022
-        note: Start a new internship at RA-Lab @ Baidu Research &#127881;&#128526; <span id="points">...</span>
-      - time: Jan 10, 2022
-        note: One paper accepted to TCSVT &#128079; 
-      - time: Dec 01, 2021
-        note: One paper accepted to AAAI 2022 &#128079; 
-      - time: Nov 29, 2021
-        note: One paper accepted to GRSL
-      - time: Nov 26, 2021
-        note: Start a internship at Perception Group @ HAOMO.AI &#128526;
-      - time: May 11, 2020
-        note: One survey paper accepted to VR&IH
-      - time: Oct 14, 2019
-        note: Start a internship at MIG-3D&AR Group @ SenseTime Research &#128526;
+    # hidden:
+    #   - time: Aug 01, 2022
+    #     note: One paper accepted to TCSVT &#128079; 
+    #   - time: Jun 30, 2022
+    #     note: <a href="https://github.com/haomo-ai/MotionSeg3D" target="_blank">MotionSeg3D</a> accepted to IROS 2022 &#127867;&#127881; 
+    #   - time: May 07, 2022
+    #     note: One paper accepted to Pattern Recognition (PR) &#128079; 
+    #   - time: Apr 30, 2022
+    #     note: One paper accepted to SPL
+    #   - time: Apr 27, 2022
+    #     note: Start a new internship at RA-Lab @ Baidu Research &#127881;&#128526; <span id="points">...</span>
+    #   - time: Jan 10, 2022
+    #     note: One paper accepted to TCSVT &#128079; 
+    #   - time: Dec 01, 2021
+    #     note: One paper accepted to AAAI 2022 &#128079; 
+    #   - time: Nov 29, 2021
+    #     note: One paper accepted to GRSL
+    #   - time: Nov 26, 2021
+    #     note: Start a internship at Perception Group @ HAOMO.AI &#128526;
+    #   - time: May 11, 2020
+    #     note: One survey paper accepted to VR&IH
+    #   - time: Nov 20, 2018
+    #     note: Start a internship at MIG-3D&AR Group @ SenseTime Research &#128526;
 ---
 
 <!-- About me -->
@@ -330,7 +349,7 @@ I am a 2nd year Ph.D student at [NuBot] group, National University of Defense Te
 
 
 
-----The following is the experience led by the Jiadai Sun, which has not been modified yet----
+<!-- ----The following is the experience led by the Jiadai Sun, which has not been modified yet---- -->
 
 
 <!-- I obtained my Master's degree in April 2023 from Northwestern Polytechnical University ([NWPU]), with the supervision of [Prof. Yuchao Dai], once again with the honor of Outstanding Graduate.
@@ -350,7 +369,7 @@ Github: [neng-wang]  \| Email: nwang@nudt.edu.cn, neng.wang@hotmail.com
 <!-- <font color='#318CE7'><b>- I am looking for a job opportunity about 3DVision, free to contact me if you think we are a good match.</b></font> -->
 
 ## Research Interest
-3D Vision, Robotics, SLAM, Autonomous Driving, Point Cloud Understanding, Motion Understanding
+Robotics, SLAM, Point Cloud Understanding
 <!-- 3D Visual Perception, 3D Vision, Robotics, SLAM, Deep Learning, Autonomous Driving & Video Object Segmentation <br /> -->
 
 
@@ -360,16 +379,16 @@ Github: [neng-wang]  \| Email: nwang@nudt.edu.cn, neng.wang@hotmail.com
     <li> [{{new.time}}] {{new.note}} </li>
   {% endfor %}
 
-  <span id="moreText"> 
+  <!-- <span id="moreText"> 
     {% for new in page.news.hidden %}
       <li> [{{new.time}}] {{new.note}} </li>
     {% endfor %}
-  </span>
+  </span> -->
 </ul>
 <!-- Trigger toggleText() when the  button is clicked -->
-<button onclick="toggleText()" id="textButton" class="showbutton"> Show More </button>
+<!-- <button onclick="toggleText()" id="textButton" class="showbutton"> Show More </button> -->
 
-## Experience & Education
+<!-- ## Experience & Education
 
 {% assign thumbnail="left" %}
 
@@ -395,7 +414,11 @@ Github: [neng-wang]  \| Email: nwang@nudt.edu.cn, neng.wang@hotmail.com
 {% endif %}
 **{{edu.title}}** <br/>
 {{ edu.comment }}
-{% endfor %}
+{% endfor %} -->
+
+## Publications
+
+
 
 ## Selected Publications
 <!-- Will upload soon... -->
