@@ -324,7 +324,12 @@ news:
 ---
 
 <!-- About me -->
-{% include image.html url="images/wangneng.jpg" caption="" width="190px" align="right" %}
+{% include image.html url="images/wangneng.jpeg" caption="" width="190px" align="right" %}
+
+I am a 2nd year Ph.D student at [NuBot] group, National University of Defense Technology([NUDT]), with the supervision of Prof. Zhiqiang Zheng. My current research focus on Point Cloud Understanding and SLAM.
+
+----The following is the experience led by the Jiadai Sun, which has not been modified yet----
+
 
 I obtained my Master's degree in April 2023 from Northwestern Polytechnical University ([NWPU]), with the supervision of [Prof. Yuchao Dai], once again with the honor of Outstanding Graduate.
 And I received my Bachelor's degree in July 2020 from the [School of Computer Science] of NWPU, with the honor of Outstanding Graduate.
@@ -455,6 +460,12 @@ Minister of Public Relations Department of Computer Volunteer Service Team \| *1
 
 
 <!--Hyperlinks -->
+[NuBot]: https://github.com/nubot-nudt
+[NUDT]: https://www.nudt.edu.cn/
+
+
+
+
 [Prof. Xiaowei Zhou]: http://xzhou.me/
 [Prof. Yuchao Dai]: https://scholar.google.com/citations?user=fddAbqsAAAAJ&hl=en
 [Prof. Y. Dai]: https://scholar.google.com/citations?user=fddAbqsAAAAJ&hl=en
