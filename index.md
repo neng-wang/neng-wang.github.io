@@ -416,18 +416,18 @@ Robotics, SLAM, Point Cloud Understanding
 {{ edu.comment }}
 {% endfor %} -->
 
+<!-- ## Publications -->
+
+
+
 ## Publications
-
-
-
-## Selected Publications
 <!-- Will upload soon... -->
 <!-- This part will be updated as soon as my on-going projects are approved to be made public which should be quite exciting.<br/> -->
 
 <!-- {% assign thumbnail="left" %} -->
 {% for pub in page.pubs %}
 {% if pub.image %}
-{% include image.html url=pub.image caption="" height="100px" align=thumbnail %}
+{% include image.html url=pub.image caption="" height="120px" align=thumbnail %}
 {% endif %}
 <!-- [**{{pub.title}}**]({% if pub.internal %}{{pub.url | prepend: site.baseurl}}{% else %}{{pub.url}}{% endif %})<br /> -->
 - **{{pub.title}}**<br />
