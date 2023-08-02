@@ -303,7 +303,7 @@ news:
       # - time: Jul 26, 2023
       #   note: One paper accepted to ACM MM 2023 &#127881;
       - time: Jul 10, 2023
-        note: We get the Best-in-Class Dexterity in RoboCup2023;
+        note: We get the Best-in-Class Dexterity in RoboCup2023 &#127867;&#127881;
       - time: Jun 22, 2023
         note: Our paper <a href="https://github.com/nubot-nudt/InsMOS" target="_blank">InsMOS</a> accepted to IROS 2023 &#128079;
       # - time: Jul 18, 2023
@@ -427,7 +427,7 @@ Robotics, SLAM, Point Cloud Understanding
 {% assign thumbnail="left" %}
 {% for pub in page.pubs %}
 {% if pub.image %}
-{% include image.html url=pub.image caption="" height="120px" align=thumbnail %}
+{% include image2.html url=pub.image caption="" align=thumbnail %}
 {% endif %}
 <!-- [**{{pub.title}}**]({% if pub.internal %}{{pub.url | prepend: site.baseurl}}{% else %}{{pub.url}}{% endif %})<br /> -->
 **{{pub.title}}**<br />
