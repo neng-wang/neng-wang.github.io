@@ -3,71 +3,83 @@ layout: page
 title: Neng Wang 王能
 permalink: /
 
-education:
-    - title: "School of Electronics and Information @ Northwestern Polytechnical University, China, 09/2020 - 04/2023"
-      image: "/images/nwpu.png"
-      comment: "-- Master of Engineering, Outstanding Graduate | Advisor: [Prof. Yuchao Dai]<br/>
-                -- Overall Average: 93.26 (3/257) | College Comprehensive Evaluation Ranking: 5/257"
-    - title: "School of Computer Science @ Northwestern Polytechnical University, China, 09/2016 - 06/2020"
-      image: "/images/nwpu.png"
-      comment: "-- Bachelor of Engineering, Outstanding Graduate, Computer Science and Technology | Advisor: [Prof. Yuchao Dai]<br/>
-                -- Overall Average: 88.28/100 | College Comprehensive Evaluation Ranking: 1/248"
+# education:
+#     - title: "School of Electronics and Information @ Northwestern Polytechnical University, China, 09/2020 - 04/2023"
+#       image: "/images/nwpu.png"
+#       comment: "-- Master of Engineering, Outstanding Graduate | Advisor: [Prof. Yuchao Dai]<br/>
+#                 -- Overall Average: 93.26 (3/257) | College Comprehensive Evaluation Ranking: 5/257"
+#     - title: "School of Computer Science @ Northwestern Polytechnical University, China, 09/2016 - 06/2020"
+#       image: "/images/nwpu.png"
+#       comment: "-- Bachelor of Engineering, Outstanding Graduate, Computer Science and Technology | Advisor: [Prof. Yuchao Dai]<br/>
+#                 -- Overall Average: 88.28/100 | College Comprehensive Evaluation Ranking: 1/248"
 
-jobs:
-    - title: "Intelligent Driving Technology (IDT) @ Baidu, Beijing, 04/2023 - now"
-      image: "/images/baidu.png"
-      comment: "-- Autonomous Driving Perception Algorithm Engineer <br/>
-                -- Apollo Navigation Pilot (ANP) 3.0 "
+# jobs:
+#     - title: "Intelligent Driving Technology (IDT) @ Baidu, Beijing, 04/2023 - now"
+#       image: "/images/baidu.png"
+#       comment: "-- Autonomous Driving Perception Algorithm Engineer <br/>
+#                 -- Apollo Navigation Pilot (ANP) 3.0 "
 
-interns:
-    - title: "Robotics and Autonomous Driving Lab (RAL) @ Baidu Research, Beijing, 04/2022 - 04/2023"
-      image: "/images/baidu_research.png"
-      comment: "-- Scene Reconstruction and Novel View Synthesis<br/>
-                -- Mentor: [Chenming Wu], [Xibin Song], [Dingfu Zhou] and [Liangjun Zhang]"
-    - title: "Perception Algo. @ Intelligent Algo. Dept. of HAOMO.AI, Beijing, 11/2021 - 04/2022"
-      image: "/images/haomo.jpg"
-      comment: "-- Online LiDAR-based 3D Moving Object Segmentation<br/>
-                -- Mentor: [Xieyuanli Chen] and Xianjing Zhang"
-    - title: "3D&AR Group @ MIG of SenseTime Research, Hangzhou, 10/2019 - 05/2020"
-      image: "/images/sensetime.png"
-      comment: "-- 3D Scene Reconstruction and Understanding | RGB-D Indoor Scene and Object Reconstruction<br/>
-                -- Mentor: [Jiaming Sun] and [Prof. Xiaowei Zhou]"
+# interns:
+#     - title: "Robotics and Autonomous Driving Lab (RAL) @ Baidu Research, Beijing, 04/2022 - 04/2023"
+#       image: "/images/baidu_research.png"
+#       comment: "-- Scene Reconstruction and Novel View Synthesis<br/>
+#                 -- Mentor: [Chenming Wu], [Xibin Song], [Dingfu Zhou] and [Liangjun Zhang]"
+#     - title: "Perception Algo. @ Intelligent Algo. Dept. of HAOMO.AI, Beijing, 11/2021 - 04/2022"
+#       image: "/images/haomo.jpg"
+#       comment: "-- Online LiDAR-based 3D Moving Object Segmentation<br/>
+#                 -- Mentor: [Xieyuanli Chen] and Xianjing Zhang"
+#     - title: "3D&AR Group @ MIG of SenseTime Research, Hangzhou, 10/2019 - 05/2020"
+#       image: "/images/sensetime.png"
+#       comment: "-- 3D Scene Reconstruction and Understanding | RGB-D Indoor Scene and Object Reconstruction<br/>
+#                 -- Mentor: [Jiaming Sun] and [Prof. Xiaowei Zhou]"
 
 projects:
-    - title: "Rescue Team Leader - NPU Dancing Robot Research & Training Base"
-      time:  "07/2017 - 08/2019"
-      topic: "Topic: SLAM, Robot Localization and Navigation, Path Planning"
-      comment: "Goal: Search for several victims placed in the disaster scene simulation site, find and mark them.<br/>
-                My main responsibility is SLAM and auto-navigation, based on Cartographer and Hector SLAM algorithms, combining them with our robots. Thanks to the cooperation of teammates."
+    - title: "Major Member - 2022, 2023 RoboCup Rescue"
+      time:  "07/2021 - 08/2023"
+      topic: "Topic: SLAM, Path Planning, Manipulator"
+      comment: "Goal: Build a rescue scene map and plan paths for robot to navigate to the target location.<br/>
+                My main responsibility is SLAM and paths planning, based on Faster-lio and TARE algorithms, combining them with our robots. Besides, I also manipulate the robotic arm to perform dexterity tasks."
       videos:
-        - name: "Rescue Team Explorer -- Presentation"
-          url: https://www.youtube.com/watch?v=ECkUeVavoEI
-        - name: "Autonomous Obstacle Avoidance Control Algo."
-          url: https://www.youtube.com/watch?v=hqvpZJrQQSM
-      image: "/images/explorer_2.png"
+        - name: "NuBot robot"
+          # url: https://www.youtube.com/watch?v=ECkUeVavoEI
+        - name: "SLAM & local planner"
+          # url: https://www.youtube.com/watch?v=hqvpZJrQQSM
+      image: "/images/robocup2023.jpeg"
+      
+    # - title: "Rescue Team Leader - NPU Dancing Robot Research & Training Base"
+    #   time:  "07/2017 - 08/2019"
+    #   topic: "Topic: SLAM, Robot Localization and Navigation, Path Planning"
+    #   comment: "Goal: Search for several victims placed in the disaster scene simulation site, find and mark them.<br/>
+    #             My main responsibility is SLAM and auto-navigation, based on Cartographer and Hector SLAM algorithms, combining them with our robots. Thanks to the cooperation of teammates."
+    #   videos:
+    #     - name: "Rescue Team Explorer -- Presentation"
+    #       url: https://www.youtube.com/watch?v=ECkUeVavoEI
+    #     - name: "Autonomous Obstacle Avoidance Control Algo."
+    #       url: https://www.youtube.com/watch?v=hqvpZJrQQSM
+    #   image: "/images/explorer_2.png"
 
-    - title: "Major Member - NPU Peak Experience Program with [Prof. Y. Dai]"
-      time:  "10/2018 - 06/2020"
-      topic: "Research Topic: Visual Technology of Unmanned System Based on Deep Learning"
-      comment: "Topic: LiDAR/Visual 3D Reconstruction, Deep ICP, Multi-sensor calibration, Visual SLAM etc.  
-                Data acquisition and reconstruction of buildings using 3D LiDAR with Cartographer. 
-                Calibration of the extrinsic parameters between Camera and LiDAR has been achieved."
-      duties: " LiDAR/Visual 3D Reconstruction, Deep ICP, Multi-sensor calibration, Visual SLAM"
-      videos:
-        - name: "Velodyne-16+IMU+cartographer"
-          url: https://youtu.be/Q-RpD6fszsY
-        - name: "Dual LiDAR Calibration"
-          url: https://youtu.be/eWi_X-0W4QI
-      image: "/images/duallidar.png"
+    # - title: "Major Member - NPU Peak Experience Program with [Prof. Y. Dai]"
+    #   time:  "10/2018 - 06/2020"
+    #   topic: "Research Topic: Visual Technology of Unmanned System Based on Deep Learning"
+    #   comment: "Topic: LiDAR/Visual 3D Reconstruction, Deep ICP, Multi-sensor calibration, Visual SLAM etc.  
+    #             Data acquisition and reconstruction of buildings using 3D LiDAR with Cartographer. 
+    #             Calibration of the extrinsic parameters between Camera and LiDAR has been achieved."
+    #   duties: " LiDAR/Visual 3D Reconstruction, Deep ICP, Multi-sensor calibration, Visual SLAM"
+    #   videos:
+    #     - name: "Velodyne-16+IMU+cartographer"
+    #       url: https://youtu.be/Q-RpD6fszsY
+    #     - name: "Dual LiDAR Calibration"
+    #       url: https://youtu.be/eWi_X-0W4QI
+    #   image: "/images/duallidar.png"
 
-    - title: "Intern - Optical Imagery Analysis and Learning Center (OPTIMAL)"
-      time:  "12/2018 - 05/2019"
-      topic: "Research Topic: Unsupervised Learning Hash Encoding Schemes for Efficient Image Retrieval"
-      comment: "Topic: Unsupervised Learning Hash Encoding Schemes for Efficient Image Retrieval. <br/>
-                Transform high-dimensional media data into compact binary codes and generate similar binary codes for similar data items, under the supervision of [Dr. Zhanxuan Hu].
-                Combine Unsupervised Clustering with Deep Hashing, based on Pytorch, and made a demo using Flask."
-      duties: "Combine Unsupervised Clustering with Deep Hashing, based on Pytorch, and made a demo using Flask."
-      image: "/images/imageretrival.png"
+    # - title: "Intern - Optical Imagery Analysis and Learning Center (OPTIMAL)"
+    #   time:  "12/2018 - 05/2019"
+    #   topic: "Research Topic: Unsupervised Learning Hash Encoding Schemes for Efficient Image Retrieval"
+    #   comment: "Topic: Unsupervised Learning Hash Encoding Schemes for Efficient Image Retrieval. <br/>
+    #             Transform high-dimensional media data into compact binary codes and generate similar binary codes for similar data items, under the supervision of [Dr. Zhanxuan Hu].
+    #             Combine Unsupervised Clustering with Deep Hashing, based on Pytorch, and made a demo using Flask."
+    #   duties: "Combine Unsupervised Clustering with Deep Hashing, based on Pytorch, and made a demo using Flask."
+    #   image: "/images/imageretrival.png"
 
 activities:
     - title: "Vice President | Tencent Innovation Club"
@@ -427,7 +439,7 @@ Robotics, SLAM, Point Cloud Understanding
 {% assign thumbnail="left" %}
 {% for pub in page.pubs %}
 {% if pub.image %}
-{% include image2.html url=pub.image caption="" align=thumbnail %}
+{% include image.html url=pub.image caption="" height="120px" align=thumbnail %}
 {% endif %}
 <!-- [**{{pub.title}}**]({% if pub.internal %}{{pub.url | prepend: site.baseurl}}{% else %}{{pub.url}}{% endif %})<br /> -->
 **{{pub.title}}**<br />
@@ -442,7 +454,7 @@ Robotics, SLAM, Point Cloud Understanding
 ## Projects
 {% for pro in page.projects %}
 {% if pro.image %}{% include image2.html url=pro.image caption="" align=thumbnail %}{% endif %}
-**{{pro.title}}**  *{{pro.time}}* 
+**{{pro.title}}**  * {{pro.time}}* 
 <!-- {% if pro.topic %}<br/>**{{pro.topic}}**{% endif %} -->
 {% if pro.comment %}<br/>{{ pro.comment }}{% endif %}
 <!-- {% if pro.duties %}<br/>{{ pro.duties }}{% endif %} -->
@@ -451,7 +463,7 @@ Robotics, SLAM, Point Cloud Understanding
 
 
 ## Honors & Awards
-- **Outstanding Graduate** and **Excellent Graduation Projects** \| Northwestern Polytechnical University,  04/2023
+<!-- - **Outstanding Graduate** and **Excellent Graduation Projects** \| Northwestern Polytechnical University,  04/2023
 - Guorui Special Scholarship (first-class top 0.4%) \| Northwestern Polytechnical University, 2021-2022
 - **Outstanding Graduate Students** (First-class Academic Scholarship) \| NWPU, 2020-2021, 2021-2022
 - **Third Prize** \| 16th China Postgraduate Electronic Design Competition, Shaoxing, 08/2021
@@ -466,22 +478,32 @@ Robotics, SLAM, Point Cloud Understanding
 - **Champion** \| China Robot Competition - Environmental Autonomous Exploration Project, Sichuan, 08/2018
 - **First Prize** \| Zhonghangzhi Technology Co., Ltd. "Lianfei Cup" Challenge Result Presentation, 11/2018
 - **First Prize** \| National Undergraduate Mathematical Modeling Competition (Shaanxi Province), 09/2017
-- **Second Prize** \| The 11th National University Student Technology Contest on Energy-saving, Wuhan, 08/2018
-- **Third Prize** \| National University Cloud Computing Application Innovation Competition, Nanjing, 04/2018
-- **Silver Award** \| "Internet +" College Student Innovation and Entrepreneurship Competition, Shaanxi, 10/2018
-- **Silver Award** \| The 11th "Creating Youth" College Entrepreneurship Competition, NWPU, 04/2018
-- **Excellent Project** \| University Student Innovation and Entrepreneurship Training Program, 2017-2018
-- **Good Project** \| University Student Innovation and Entrepreneurship Training Program, 2017-2018
+- **Second Prize** \| The 11th National University Student Technology Contest on Energy-saving, Wuhan, 08/2018 -->
+- **Best in class** \| RoboCup Rescue - Dexterity, Bordeaux, France, 07/2023
+- **First Prize** \| China Robot Competition and RoboCup - Robot Rescue, 11/2022
+- **Second Prize** \| China Robot Competition - Environmental Autonomous Exploration, 11/2022
+- **Best in class** \| RoboCup Rescue - Exploration and Mapping Scenario, 07/2022
+- **Best in class** \| RoboCup Rescue - Search and Inspect, 07/2022
+- **First Prize** \| China Robot Competition for Robot Rescue, 11/2021
+- **Outstanding Graduate** and **Excellent Graduation Projects** \| Southwest Petroleum University, 06/2021
+- Yongyi scholarship \| (first-class  top 0.1%), Sichuan, 12/2019
+- Principal scholarship \| (first-class  top 0.1%), Sichuan, 12/2020
+- **Honorable Mention** \| Interdisciplinary Contest in Modeling, Sichuan, 3/2020,
+- **Grand Prize** \| National Educational Robotics Competition, Guangxi, 11/2018
+- **Second Prize** \| National Undergraduate Intelligence Vehicle Competition, Shandong, 08/2019
+- **Second Prize** \| National Undergraduate Electronic Design Contest (Sichuan Region), Chengdu, 08/2019
+- **Third Prize** \| National Engineering Robotics Competition and International Open Competition,Guangdong, 04/2019
+- National Scholarship \| (first-class  top 0.5%), 2018-2019
 
-## Misc.
+<!-- ## Misc. -->
 <!-- - Rejected list: [AAA21, CVPR21, ICCV21, BMVC21, CVPR22, ECCV22] &#129318; -->
-- Reviewer: IROS / RA-L / ACCV / MM / ROB *etc.* 
+<!-- - Reviewer: IROS / RA-L *etc.* 
 - I love traveling and photography, and the scenery in northwestern China is usually exciting. (14/34 provinces) [**[500px]**]<br/>
 - In the past I used to use Hexo and Markdown to make some records. It is written in Chinese. **[Click &rArr;BLOG-LINK](https://sunjiadai.xyz/blog){:target="_blank"}** <br/>
 - Some meaningful extracurricular activities during my undergraduate: <br/>
 Vice President of Tencent Innovation Club \| *10/2016 - 07/2019* \| [[Image]](/images/tic.jpg){:target="_blank"} <br/>
 Chief Propagandist & Technical Support of Summer Social Practice Activities \| *07/2017* \| [[Image]](/images/share.jpg){:target="_blank"} <br/>
-Minister of Public Relations Department of Computer Volunteer Service Team \| *10/2016 - 10/2018* \| [[Image]](/images/volunteer.jpg){:target="_blank"} <br/>
+Minister of Public Relations Department of Computer Volunteer Service Team \| *10/2016 - 10/2018* \| [[Image]](/images/volunteer.jpg){:target="_blank"} <br/> -->
 
 
 <!--Hyperlinks -->
