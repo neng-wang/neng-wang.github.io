@@ -44,7 +44,7 @@ projects:
           # url: https://www.youtube.com/watch?v=ECkUeVavoEI
         - name: "SLAM & local planner"
           # url: https://www.youtube.com/watch?v=hqvpZJrQQSM
-      image: "/images/robocup2023.jpeg"
+      image: "/images/robocup.jpeg"
       
     # - title: "Rescue Team Leader - NPU Dancing Robot Research & Training Base"
     #   time:  "07/2017 - 08/2019"
@@ -495,6 +495,13 @@ Robotics, SLAM, Point Cloud Understanding
 - **Third Prize** \| National Engineering Robotics Competition and International Open Competition,Guangdong, 04/2019
 - National Scholarship \| (first-class  top 0.5%), 2018-2019
 
+
+## Services
+
+# Conference Reviewers
+ - IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS) 2023
+# Journal Reviewers
+ - IEEE Robotics and Automation Letters
 <!-- ## Misc. -->
 <!-- - Rejected list: [AAA21, CVPR21, ICCV21, BMVC21, CVPR22, ECCV22] &#129318; -->
 <!-- - Reviewer: IROS / RA-L *etc.* 
