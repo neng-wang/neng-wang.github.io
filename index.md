@@ -355,7 +355,7 @@ news:
 ---
 
 <!-- About me -->
-{% include image.html url="images/wangneng.jpeg" caption="" width="190px" align="right" %}
+{% include image.html url="images/wangneng.jpeg" caption="" width="240px" align="left" %}
 
 I am a 2nd year Ph.D student at [NuBot] group, National University of Defense Technology([NUDT]). I am under the supervision of Prof. Zhiqiang Zheng and receive collaborative guidance from Prof. Huimin Lu and [Assoc. Prof. Xieyuanli Chen]. My current research focuses on Point Cloud Understanding and SLAM. Previously, I studied at Southwest Petroleum University([SWPU]) and obtained a bachelor’s degree, with the honor of Outstanding Graduate. I then direct entry for doctoral program at [NUDT].
 
@@ -497,12 +497,11 @@ Robotics, SLAM, Point Cloud Understanding
 
 
 ## Services
-
-### Conference Reviewers
+#### Conference Reviewers
  - IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS) 2023
-### Journal Reviewers
+#### Journal Reviewers
  - IEEE Robotics and Automation Letters
- 
+
 <!-- ## Misc. -->
 <!-- - Rejected list: [AAA21, CVPR21, ICCV21, BMVC21, CVPR22, ECCV22] &#129318; -->
 <!-- - Reviewer: IROS / RA-L *etc.* 
