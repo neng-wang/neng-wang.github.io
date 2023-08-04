@@ -100,8 +100,9 @@ Robotics, SLAM, Point Cloud Understanding
 {% assign thumbnail="left" %}
 {% for pub in page.pubs %}
 {% if pub.image %}
-{% include image.html url=pub.image caption="" height="120px" align=thumbnail %}
+{% include image.html url=pub.image caption="" width="160px" height="120px" align=thumbnail %}
 {% endif %}
+
 <!-- [**{{pub.title}}**]({% if pub.internal %}{{pub.url | prepend: site.baseurl}}{% else %}{{pub.url}}{% endif %})<br /> -->
 **{{pub.title}}**<br />
 {{pub.author}}<br />
