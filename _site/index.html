@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <title>Neng Wang - Neng Wang 王能</title> -->
+    <title>Neng Wang</title>
+
+    <meta name="description" content="Homepage">
+
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="canonical" href="http://localhost:4002/">
+    <link rel="alternate" type="application/rss+xml" title="Neng Wang" href="http://localhost:4002/feed.xml" />
+
+    <!-- <link href='https://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- open all link in a new tab -->
+    <base target="_blank" rel="noopener noreferrer">
+
+    <!--网页标题左侧显示 & 收藏夹-->
+    <link rel="icon" href="/images/web_logo.jpg" type="image/jpg">
+    <link rel="shortcut icon" href="/images/web_logo.jpg" type="image/jpg">
+
+    <style>
+        /* Used for the hidden ul list, add by sun;
+           Initially, hide the extra text that can be revealed with the button */
+        #moreText {  display: none; } /* Display nothing for the element */
+        .showbutton {
+            appearance: none;
+            background: transparent;
+            outline: none;
+            border: 1px solid grey;
+            border-radius: 2px;
+            margin-left:12px;
+            font-size: small;
+            cursor: pointer;
+            padding: .2rem .25rem;
+            font-family: inherit
+        }
+    </style>
+    <script>
+        function toggleText() {
+    
+            // Get all the elements from the page
+            var points =  document.getElementById("points");
+            var showMoreText = document.getElementById("moreText");
+            var buttonText = document.getElementById("textButton");
+    
+            // If the display property of the dots to be displayed is already set to 'none' (that is hidden) then this section of code triggers
+            if (points.style.display === "none") {
+                showMoreText.style.display = "none"; // Hide the text between the span elements
+                points.style.display = "inline"; // Show the dots after the text
+                buttonText.innerHTML = "Show More"; // Change the text on button to 'Show More'
+            } else { // If the hidden portion is revealed, we will change it back to be hidden
+                showMoreText.style.display = "inline"; // Show the text between the span elements            
+                points.style.display = "none"; // Hide the dots after the text
+                buttonText.innerHTML = "Hidden"; // Change the text on button to 'Show Less'
+            }
+        }
+    </script>
+</head>
+
+
+  <body>
+  <div class="page">
+    <header class="site-header">
+    <a class="site-title" href="/">Neng Wang</a>
+    <nav class="site-nav">
+        <a href="#" class="menu-icon menu.open">
+            <svg viewBox="0 0 18 15">
+                <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+                <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+                <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+            </svg>
+        </a>
+        <div class="trigger"><h1>Main Navigation</h1>
+            <ul class="menu">
+    
+    
+     <li><a href="/" class="page-link">About</a>
+    
+    </li>
+    
+</ul>
+
+        </div>
+    </nav>
+</header>
+
+
+    <div class="post">
+    <header class="post-header">
+        <h1>Neng Wang 王能</h1>
+    </header>
+
+    <!-- About me -->
+<div class="captioned-img alignright">
+    <a href="images/wangneng.jpeg">
+    
+    <img src="images/wangneng.jpeg" width="240px" />
+    </a>
+</div>
+
+<p>I am a 2nd year Ph.D student at <a href="https://github.com/nubot-nudt">NuBot</a> group, National University of Defense Technology(<a href="https://www.nudt.edu.cn/">NUDT</a>). I am under the supervision of Prof. Zhiqiang Zheng and receive collaborative guidance from Prof. Huimin Lu and <a href="http://xieyuanli-chen.com/">Assoc. Prof. Xieyuanli Chen</a>. My current research focuses on Point Cloud Understanding and SLAM. Previously, I studied at Southwest Petroleum University(<a href="https://www.swpu.edu.cn/en/">SWPU</a>) and obtained a bachelor’s degree, with the honor of Outstanding Graduate. I then direct entry for doctoral program at <a href="https://www.nudt.edu.cn/">NUDT</a>.</p>
+
+<p>Github: <a href="https://github.com/neng-wang">neng-wang</a>  | Email: nwang@nudt.edu.cn, neng.wang@hotmail.com</p>
+
+<h2 id="research-interest">Research Interest</h2>
+<p>Robotics, SLAM, Point Cloud Understanding
+<!-- 3D Visual Perception, 3D Vision, Robotics, SLAM, Deep Learning, Autonomous Driving & Video Object Segmentation <br /> --></p>
+
+<h2 id="recent-news">Recent News</h2>
+<ul>
+  
+    <li> [Jul 10, 2023] We get the Best-in-Class Dexterity in RoboCup2023 &#127867;&#127881; </li>
+  
+    <li> [Jun 22, 2023] Our paper <a href="https://github.com/nubot-nudt/InsMOS" target="_blank">InsMOS</a> accepted to IROS 2023 &#128079; </li>
+  
+
+  <!-- <span id="moreText"> 
+    
+  </span> -->
+</ul>
+
+<h2 id="publications">Publications</h2>
+<!-- Will upload soon... -->
+<!-- This part will be updated as soon as my on-going projects are approved to be made public which should be quite exciting.<br/> -->
+
+<div class="captioned-img alignleft">
+    <a href="/images/InsMOS.gif">
+    
+    <img src="/images/InsMOS.gif" height="120px" />
+    </a>
+</div>
+
+<!-- [**InsMOS: Instance-Aware Moving Object Segmentation in LiDAR Data**]()<br /> -->
+<p><strong>InsMOS: Instance-Aware Moving Object Segmentation in LiDAR Data</strong><br />
+<strong>Neng Wang</strong>, Chenghao Shi, Ruibin Guo, Huimin Lu, Zhiqiang Zheng, Xieyuanli Chen<br />
+<em>Proceedings of the IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</em>   <em>2023</em><br />
+   [Page] 
+  [Paper] 
+  [<a href="https://arxiv.org/abs/2303.03909" target="_blank">arXiv</a>] 
+  [<a href="https://github.com/nubot-nudt/InsMOS" target="_blank">Code</a>] 
+  [Data]</p>
+
+<h2 id="projects">Projects</h2>
+
+<style>
+.ShaShiDi{
+    width: 250px;
+    height:141px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    /*for better visualization*/
+    /* border:1px solid black;  */
+}
+
+.ShaShiDi img{
+    width:auto;
+    height:auto;
+    max-width:100%;
+    max-height:100%;
+}
+
+</style>
+
+<div class="ShaShiDi alignleft">
+    <img src="/images/robocup.jpeg" />
+</div>
+<p><strong>Major Member - 2022, 2023 RoboCup Rescue</strong>  * 07/2021 - 08/2023* 
+<!-- <br/>**Topic: SLAM, Path Planning, Manipulator** -->
+<br />Goal: Build a rescue scene map and plan paths for robot to navigate to the target location.<br /> My main responsibility is SLAM and paths planning, based on Faster-lio and TARE algorithms, combining them with our robots. Besides, I also manipulate the robotic arm to perform dexterity tasks.
+<!--  -->
+<br /><strong>Video:</strong> [<a href="" target="_blank">NuBot robot</a>][<a href="" target="_blank">SLAM &amp; local planner</a>]</p>
+
+<h2 id="honors--awards">Honors &amp; Awards</h2>
+<ul>
+  <li><strong>Best in class</strong> | RoboCup Rescue - Dexterity, Bordeaux, France, 07/2023</li>
+  <li><strong>First Prize</strong> | China Robot Competition and RoboCup - Robot Rescue, 11/2022</li>
+  <li><strong>Second Prize</strong> | China Robot Competition - Environmental Autonomous Exploration, 11/2022</li>
+  <li><strong>Best in class</strong> | RoboCup Rescue - Exploration and Mapping Scenario, 07/2022</li>
+  <li><strong>Best in class</strong> | RoboCup Rescue - Search and Inspect, 07/2022</li>
+  <li><strong>First Prize</strong> | China Robot Competition for Robot Rescue, 11/2021</li>
+  <li><strong>Outstanding Graduate</strong> and <strong>Excellent Graduation Projects</strong> | Southwest Petroleum University, 06/2021</li>
+  <li>Yongyi scholarship | (first-class  top 0.1%), Sichuan, 12/2019</li>
+  <li>Principal scholarship | (first-class  top 0.1%), Sichuan, 12/2020</li>
+  <li><strong>Honorable Mention</strong> | Interdisciplinary Contest in Modeling, Sichuan, 3/2020,</li>
+  <li><strong>Grand Prize</strong> | National Educational Robotics Competition, Guangxi, 11/2018</li>
+  <li><strong>Second Prize</strong> | National Undergraduate Intelligence Vehicle Competition, Shandong, 08/2019</li>
+  <li><strong>Second Prize</strong> | National Undergraduate Electronic Design Contest (Sichuan Region), Chengdu, 08/2019</li>
+  <li><strong>Third Prize</strong> | National Engineering Robotics Competition and International Open Competition,Guangdong, 04/2019</li>
+  <li>National Scholarship | (first-class  top 0.5%), 2018-2019</li>
+</ul>
+
+<h2 id="services">Services</h2>
+<p><strong>Conference Reviewers</strong></p>
+<ul>
+  <li>IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS) 2023</li>
+</ul>
+
+<p><strong>Journal Reviewers</strong></p>
+<ul>
+  <li>IEEE Robotics and Automation Letters</li>
+</ul>
+
+<!--Hyperlinks -->
+
+
+</div>
+
+
+    <footer class="site-footer">
+    <!-- Homepage | Jiadai Sun | Last update 20/07/2021<br /> -->
+    Homepage | Neng Wang | Last update Aug 4th, 2023<br />
+ 
+    <!-- 
+     :: <a href="https://neng-wang.github.io/">Website source</a>
+     -->
+    
+    <!-- <script type="text/javascript" src="//counter.websiteout.net/js/36/8/21961/0"></script> -->
+    <!-- <script type="text/javascript" src="//counter.websiteout.net/js/5/0/0/0"></script> -->
+
+    <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=350&t=tt&d=NhLTwKkzd78gTZylXp-z911hcXohcSEZP26CAscYAfk&co=f2f4f4&cmo=e24242&ct=7188f4'></script>
+</footer>
+
+    
+
+    </div>
+  </body>
+
+</html>
