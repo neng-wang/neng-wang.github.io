@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>InsMOS</title>
+  <!-- Bootstrap -->
+  <link href="css/bootstrap-4.4.1.css" rel="stylesheet"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+  <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+  <!-- <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script> -->
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      extensions: ["tex2jax.js"],
+      jax: ["input/TeX", "output/HTML-CSS"],
+      tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+        processEscapes: true
+      },
+      "HTML-CSS": { availableFonts: ["TeX"] }
+    });
+  </script>
+</head>
+
+<!-- cover -->
+<section>
+  
+  <div class="jumbotron text-center mt-0">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2>InsMOS: Instance-Aware Moving Object Segmentation in LiDAR Data</h2>
+          <h4 style="color:#5a6268;">IROS 2023</h4>
+          <hr>
+          <h6>
+            <a href="https://neng-wang.github.io" target="_blank">Neng Wang</a>,
+            <!-- <a href="https://scholar.google.com/citations?user=fddAbqsAAAAJ&hl=en" target="_blank">Yuchao Dai</a><sup>1</sup>,
+            <a href="https://github.com/zoojing" target="_blank">Xianjing Zhang</a><sup>2</sup>, -->
+            Chenghao Shi, Ruibin Guo, Huimin Lu<sup>*</sup>, Zhiqiang Zheng,
+            <a href="https://github.com/Chen-Xieyuanli" target="_blank">Xieyuanli Chen</a><sup>*</sup>
+
+          </h6>
+          <p>College of Intelligence Science and Technology, National University of Defense Technology &nbsp;&nbsp;<br>
+            <sup>*</sup>denotes corresponding author &nbsp;&nbsp;
+            <br>
+          </p>
+
+          <div class="row justify-content-center">
+            <div class="column">
+              <p class="mb-5"><a class="btn btn-large btn-light" href="https://arxiv.org/abs/2303.03909" role="button" target="_blank">
+                  <i class="fa fa-file"></i> arXiv </a> </p>
+            </div>
+            <div class="column">
+              <p class="mb-5"><a class="btn btn-large btn-light" href="https://github.com/nubot-nudt/InsMOS" role="button" target="_blank">
+                  <i class="fa fa-github-alt"></i> Code </a> </p>
+            </div>
+            <div class="column">
+              <p class="mb-5"><a class="btn btn-large btn-light" href="https://1drv.ms/f/s!Ak6KrcxOqwZfkABaeJYYLb7ZT7Fg?e=zguXiK" role="button" target="_blank">
+                  <i class="fa fa-database"></i> SemanticKITTI-Boundingbox </a> </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- abstract -->
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h3>Motivated</h3>
+        <hr style="margin-top:0px">
+            <img class="img-fluid"
+              src="images/compare.png"
+              alt="compare">
+        <p class="text-left"> Many from existing approaches that classify moving objects on a point-by-point basis, but this often results in incomplete segmentation of moving objects.
+          Therefore, we proposed a method that focuses more on a higher instance level and determines which instances are currently moving in the scene.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<br>
+
+<!-- overview video -->
+<!-- <section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h3>Overview Video</h3>
+        <hr style="margin-top:0px">
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe width="950" height="534" src="https://www.youtube.com/embed/kao26zX1Hdo" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<br> -->
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h3>Abstract</h3>
+        <hr style="margin-top:0px">
+        <p class="text-left"> Identifying moving objects is a crucial capability for autonomous navigation, consistent map generation, and future trajectory prediction of objects. In this paper, we propose
+          a novel network that addresses the challenge of segmenting moving objects in 3D LiDAR scans. Our approach not only predicts point-wise moving labels but also detects instance information of main traffic participants.
+          Such a design helps determine which instances are actually moving and which ones are temporarily static in the current scene. Our method exploits a sequence of point clouds as input and quantifies them into 4D voxels. 
+          We use 4D sparse convolutions to extract motion features from the 4D voxels and inject them into the current scan.
+          Then, we extract spatio-temporal features from the current scan for instance detection and feature fusion. 
+          Finally, we design an upsample fusion module to output point-wise labels by fusing the spatio-temporal features and predicted instance information. 
+          We evaluated our approach on the LiDAR-MOS benchmark based on SemanticKITTI and achieved better moving object segmentation performance compared to state-of-theart methods, demonstrating the effectiveness of our approach in
+          integrating instance information for moving object segmentation. Furthermore, our method shows superior performance on
+          the Apollo dataset with a pre-trained model on SemanticKITTI, indicating that our method generalizes well in different scenes.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<br>
+
+<!-- system overview -->
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+          <h3>System overview</h3>
+          <hr style="margin-top:0px">
+
+          <img class="img-fluid" src="images/pipeline_2.png" alt="InsMOS System Overview" width="90%">
+          <br>
+          <br>
+          <p class="text-justify">
+            <strong>InsMOS Network Architecture</strong>. Our network is composed of three main components: MotionNet,
+            instance detection module, and upsample fusion module. MotionNet is designed to extract motion features of the input 4D voxels. We then concatenate motion features with
+            original point features and use an instance detection module to extract the spatio-temporal features from the current scan
+            for instance detection and feature fusion. Finally, the upsample fusion module achieves point-wise MOS by integrating
+            spatio-temporal and instance information.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<br>
+
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+          <h3>Experiments</h3>
+          <hr style="margin-top:0px">
+          <p class="text-justify">
+            We train our model on both SemanticKITTIMOS dataset, and KITTI-road dataset1 and evaluate it on the SemanticKITTI-MOS benchmark2. Besides, to overcome
+            the imbalance distribution of quantities between moving and static objects on the SemanticKITTI-MOS dataset, we follow MotionSeg3D and use their conducted training and validation
+            sets based on KITTI-road, where sequences 30-34, 40 for training and 35-39, 41 for validation.
+          </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+      <div class="row">
+          <div class="col text-center">
+              <h5 class="text-left"><li><b>Quantitative Comparison</b></li></h5>
+              <br>
+              <img class="img-fluid" src="images/evaluation.png" width="50%">
+              <br>
+              <br>
+              <p class="text-justify">
+                The quantitative comparison is shown in Tab. I, and the results display that our approach achieves the state-of-the-art MOS performance with 75.6% IoU. LMNet, 4DMOS and RVMOS are trained 
+                on the SemantiKITTI dataset, and RVMOS achieves great performance improvement up to 74.7% IoU. That is mainly due to the fact that RVMOS inserts semantic information in the network
+                implementations. AutoMos, MotionSeg3D and our network
+                perform training on the SemantiKITTI and an additional
+                labeled KITTI road dataset in order to reduce the
+                impact of unbalanced data distribution. </p>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+<section>
+  <div class="container">
+      <div class="row">
+          <div class="col text-center">
+              <h5 class="text-left"><li><b>Qualitative Comparison</b></li></h5>
+              <br>
+              <img class="img-fluid" src="images/compare_v8.png" width="90%">
+              <br>
+              <br>
+              <p class="text-justify">
+                Qualitative comparisons of our method with LMNet and 4DMOS on the SemanticKITTI validation set. 
+                LMNet is the first work on LiDAR MOS exploiting range images, which is fast but results in many wrong predictions.
+                4DMOS performs well on fast-moving object segmentation, but not as well on slow-moving object segmentation. As
+                4DMOS cannot capture the instance information of the moving points, only partial points of the moving instance can
+                be correctly predicted. However, our approach can segment moving objects completely and has the ability to detect slowmoving instances by integrating past observations in the
+                instance-based refinement algorithm. The qualitative experimental results support our first claim and further demonstrate
+                that instance information is highly valuable for MOS task. </p>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+      <div class="row">
+          <div class="col text-center">
+              <h5 class="text-left"><li><b>Generalization Analyses</b></li></h5>
+              <br>
+              <img class="img-fluid" src="images/generalization.png" width="50%">
+              <br>
+              <br>
+              <p class="text-justify">
+                To test the generalization of InsMOS, we conduct experiments on the Apollo dataset. We compare our method with three open source baseline methods, including MotionSeg3D,
+                LMNet and 4DMOS. All methods are only trained on the training set of SemanticKITTI and evaluated on
+                the Apollo dataset without modifying any settings or parameters fine-tuning. Besides, we also present the result
+                of fine-tuned LMNet combined with AutoMOS , noted
+                as LMNet+AutoMOS+Fine-Tuned. From results are shown in table. Two range image-based
+                methods MotionSeg3D and LMNet show bad performance in
+                the generalization test, while 4DMOS and our method maintain good segmentation ability in unknown environments.
+                The possible reason is that the projection-based approaches overfit the setup of the sensor and specific patterns in the
+                trained environments, which will affect the performance
+                of projection-based approaches while the point cloud-based
+                approaches will not be affected. Benefiting from the learned
+                instance information, our method still outperforms 4DMOS.</p>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+      <div class="row">
+          <div class="col text-center">
+              <h5 class="text-left"><li><b>Instance Detection</b></li></h5>
+              <br>
+              <img class="img-fluid" src="images/instance.png" width="90%">
+              <br>
+              <br>
+              <p class="text-justify">
+                To further demonstrate the ability of our method to detect instances, we evaluate the performance on the KITTI tracking dataset with the model pre-trained on SemanticKITTI.
+                The KITTI tracking dataset contains more instances compared to the SemanticKITTI dataset. The results show that our method is able to 
+                accurately predict the instance category and 3D bounding box of major traffic
+                participants, albeit in a complex environment.</p>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+
+<!-- Acknowledgements -->
+<!-- <section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h3>Acknowledgements</h3>
+        <hr style="margin-top:0px">
+        <p class="text-left"> 
+          We would like to thank Yufei Wang and Mochu Xiang for their insightful and effective discussions. <br/>And we would like to thank HAOMO.AI for the support of this work.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<br> -->
+
+<!-- citing -->
+<!-- <div class="container">
+  <div class="row ">
+    <div class="col-12">
+      <h3>Citation</h3>
+      <hr style="margin-top:0px">
+      <pre style="background-color: #e9eeef;padding: 1.25em 1.5em">
+<code>@inproceedings{wang2023insmos,
+  title={InsMOS: Instance-Aware Moving Object Segmentation in LiDAR Data},
+  author={Wang, Neng and Shi, chenghao and Guo, Ruibin and Lu, Huimin and Zheng, Zhiqiang and Chen, Xieyuanli},
+  booktitle={IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
+  year={2023},
+  organization={IEEE}
+}
+</code></pre>
+      <hr>
+    </div>
+  </div>
+</div> -->
+
+<footer class="text-center" style="margin-bottom:10px">
+  <br>
+  Thanks to <a href="https://lioryariv.github.io/" target="_blank">Lior Yariv</a> for the website template.
+</footer>
+
+</body>
+
+</html>
