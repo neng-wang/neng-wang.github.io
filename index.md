@@ -35,7 +35,7 @@ pubs:
       image:   "/images/InsMOS.gif"
       media:
         - name: "Page"
-          # url:  https://npucvr.github.io/MotionSeg3D/
+          url:  https://neng-wang.github.io/InsMOS/
         - name: "Paper"
           # url:  https://ieeexplore.ieee.org/document/9981210/
         - name: "arXiv"
@@ -43,7 +43,7 @@ pubs:
         - name: "Code"
           url: https://github.com/nubot-nudt/InsMOS
         - name: "Data"
-          # url: https://github.com/haomo-ai/MotionSeg3D/blob/master/config/kitti_road_mos.md
+          url: https://1drv.ms/f/s!Ak6KrcxOqwZfkABaeJYYLb7ZT7Fg?e=zguXiK
 
 
 
