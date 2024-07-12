@@ -37,7 +37,7 @@ pubs:
         - name: "Page"
           url:  https://neng-wang.github.io/InsMOS/
         - name: "Paper"
-          # url:  https://ieeexplore.ieee.org/document/9981210/
+          url:  https://ieeexplore.ieee.org/document/10342277
         - name: "arXiv"
           url: https://arxiv.org/abs/2303.03909
         - name: "Code"
