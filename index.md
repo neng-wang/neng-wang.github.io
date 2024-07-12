@@ -45,12 +45,29 @@ pubs:
         - name: "Data"
           url: https://1drv.ms/f/s!Ak6KrcxOqwZfkABaeJYYLb7ZT7Fg?e=zguXiK
 
-
+    - title:   "Diffusion-Based Point Cloud Super-Resolution for mmWave Radar Data"
+      author:  "Kai Luan, Chenghao Shi, **Neng Wang**, Yuwei Cheng, Huimin Lu, Xieyuanli Chen"
+      journal: "Proceedings of the IEEE International Conference on Robotics and Automation (ICRA)"
+      year:    "2024"
+      image:   "/images/mmwave.png"
+      media:
+        - name: "Page"
+          #url:  https://neng-wang.github.io/InsMOS/
+        - name: "Paper"
+          # url:  https://ieeexplore.ieee.org/document/9981210/
+        - name: "arXiv"
+          url: https://arxiv.org/pdf/2404.06012
+        # - name: "Code"
+        #   url: https://github.com/nubot-nudt/InsMOS
+        # - name: "Data"
+        #   url: https://1drv.ms/f/s!Ak6KrcxOqwZfkABaeJYYLb7ZT7Fg?e=zguXiK
 
 news:
     shown:
       # - time: Jul 26, 2023
       #   note: One paper accepted to ACM MM 2023 &#127881;
+      - time: Jan 30, 2024
+        note: 1 paper is accepted to ICRA 2024 &#128079;
       - time: Jul 10, 2023
         note: We get the Best-in-Class Dexterity in RoboCup2023 &#127867;&#127881;
       - time: Jun 22, 2023
