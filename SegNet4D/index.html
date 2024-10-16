@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SGLC</title>
+  <!-- Bootstrap -->
+  <link href="css/bootstrap-4.4.1.css" rel="stylesheet"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+  <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+  <!-- <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script> -->
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      extensions: ["tex2jax.js"],
+      jax: ["input/TeX", "output/HTML-CSS"],
+      tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+        processEscapes: true
+      },
+      "HTML-CSS": { availableFonts: ["TeX"] }
+    });
+  </script>
+</head>
+
+<!-- cover -->
+<section>
+  
+  <div class="jumbotron text-center mt-0">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2>SegNet4D: Efficient Instance-Aware 4D LiDAR <br>
+            Semantic Segmentation for Driving Scenarios</h2>
+          <h4 style="color:#5a6268;">arXiv 2024</h4>
+          <hr>
+          <h6>
+            <a href="https://neng-wang.github.io" target="_blank">Neng Wang</a><sup>1*</sup>,
+            <!-- <a href="https://scholar.google.com/citations?user=fddAbqsAAAAJ&hl=en" target="_blank">Yuchao Dai</a><sup>1</sup>,
+            <a href="https://github.com/zoojing" target="_blank">Xianjing Zhang</a><sup>2</sup>, -->
+            Ruibin Guo<sup>1*</sup>,
+            Chenghao Shi<sup>1</sup>, 
+            Ziyue Wang<sup>1</sup>,
+            Hui Zhang<sup>1</sup>,
+            Huimin Lu<sup>1</sup>,
+            Zhiqiang Zheng<sup>1</sup>, 
+            <a href="https://github.com/Chen-Xieyuanli" target="_blank">Xieyuanli Chen</a><sup>1*</sup>
+            
+
+          </h6>
+          <p>1:National University of Defense Technology
+            <br>
+            <sup>*</sup>denotes equal contribution &nbsp;&nbsp;
+            <br>
+          </p>
+
+          <div class="row justify-content-center">
+            <div class="column">
+              <p class="mb-5"><a class="btn btn-large btn-light" href="https://arxiv.org/abs/2407.08106" role="button" target="_blank">
+                  <i class="fa fa-file"></i> arXiv </a> </p>
+            </div>
+            <div class="column">
+              <p class="mb-5"><a class="btn btn-large btn-light" href="https://github.com/nubot-nudt/SegNet4D" role="button" target="_blank">
+                  <i class="fa fa-github-alt"></i> Code </a> </p>
+            </div>
+            <!-- <div class="column">
+              <p class="mb-5"><a class="btn btn-large btn-light" href="https://1drv.ms/f/s!Ak6KrcxOqwZfkABaeJYYLb7ZT7Fg?e=zguXiK" role="button" target="_blank">
+                  <i class="fa fa-database"></i> SemanticKITTI-Boundingbox </a> </p>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- abstract -->
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h3>Motivated</h3>
+        <p class="text-justify">
+          &nbsp;&nbsp;Loop closing is a crucial component in SLAM that helps eliminate accumulated errors through two main steps: loop detection and loop pose correction. 
+          The first step determines whether loop closing should be performed, while the second estimates the 6-DoF pose to correct odometry drift. 
+          Current methods mostly focus on developing robust descriptors for loop closure detection, often neglecting loop pose estimation.
+          A few methods that do include pose estimation either suffer from low accuracy or incur high computational costs.
+           To tackle this problem, we introduce SGLC, a real-time semantic graph-guided full loop closing method, with robust loop closure detection and 6-DoF pose estimation capabilities.
+        </p>
+        <hr style="margin-top:0px">
+            <img class="img-fluid"
+              src="images/motivated.jpg"
+              alt="compare" width="50%">
+        <p class="text-justify"> 
+           <br>
+           &nbsp;&nbsp;Visualization of loop closing using our method. 
+          (a) Loop closure detection, it shows a reverse loop on the KITTI 08 sequence found by our approach even with significant changes in the position and orientation. 
+          (b) Semantic node correspondences for geometric verification and initial loop poses estimation. The blue lines  indicate the node correspondences and red spheres represent the estimated instance center.
+          (c) Final alignment for loop correction.
+                
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<br>
+
+<!-- overview video -->
+<!-- <section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h3>Overview Video</h3>
+        <hr style="margin-top:0px">
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe width="950" height="534" src="https://www.youtube.com/embed/kao26zX1Hdo" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<br> -->
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h3>Abstract</h3>
+        <hr style="margin-top:0px">
+        <p class="text-justify"> &nbsp;&nbsp;SGLC takes into account the distinct characteristics of foreground and background points.
+          For foreground instances, it builds a semantic graph that not only abstracts point cloud representation for fast descriptor generation and matching but also guides the subsequent loop verification and initial pose estimation.
+          Background points, meanwhile, are exploited to provide more geometric features for scan-wise descriptor construction and stable planar information for further pose refinement.
+          Loop pose estimation employs a coarse-fine-refine registration scheme that considers the alignment of both instance points and background points, offering high efficiency and accuracy.
+          We evaluate the loop closing performance of SGLC through extensive experiments on the KITTI and KITTI-360 datasets, demonstrating its superiority over existing state-of-the-art methods. Additionally, we integrate SGLC into a SLAM system, eliminating accumulated errors and improving overall SLAM performance.
+          </p>
+      </div>
+    </div>
+  </div>
+</section>
+<br>
+
+<!-- system overview -->
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+          <h3>System overview</h3>
+          <hr style="margin-top:0px">
+
+          <img class="img-fluid" src="images/framework.jpg" alt="SGLC System Overview" width="90%">
+          <br>
+          <br>
+          <p class="text-justify">
+            &nbsp;&nbsp;<strong>SGLC Framework</strong>. The framework of SGLC. 
+            It first builds a semantic graph for foreground instances and then generates LiDAR scan descriptor considering both the topological properties of the semantic graph and the appearance characteristics of the background.
+            The LiDAR scan descriptor is utilized to retrieve loop candidate scans from the database.
+            Following this,  geometric verification is performed on each loop candidate to filter out false loop closure, with the key step utilizing the instance node descriptors for robust sparse node matching.
+            Finally, a coarse-fine-refine registration scheme is employed to estimate the precise 6-DoF pose.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<br>
+
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+          <h3>Experiments</h3>
+          <hr style="margin-top:0px">
+          <p class="text-justify">
+            &nbsp;&nbsp;We evaluate our method on two publicly available datasets: KITTI and KITTI-360.
+            KITTI includes 11 sequences with ground truth poses, among which six sequences (00, 02, 05, 06, 07, 08) contain loop closures and sequence 08 contains reverse loop closures.
+            KITTI-360 is composed of 9 sequences, with 6 of them containing loops. 
+            Compared to KITTI, KITTI-360 has a greater number of loop closures and reverse loop closures.
+            We use the semantic information from a SegNet4D on both datasets and mainly build semantic graphs from static vehicle, pole and trunk instances, and utilize background points from building, fence, road and vegetation.
+            This is convenient for replacing or adding other semantic information.
+            All the experiments are conducted on a machine with an AMD 3960X @3.8GHz CPU and a NVIDIA RTX 3090 GPU. More implementation details can be found in our open-source repository.
+          </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+      <div class="row">
+          <div class="col text-center">
+              <h5 class="text-left"><li><b>Loop Clousre Detection</b></li></h5>
+              <br>
+              <img class="img-fluid" src="images/lcd_1.png" width="100%">
+              <br>
+              <br>
+              <p class="text-justify">
+                &nbsp;&nbsp;Our method outperforms SOTA on multiple sequences and achieves the best average F1max score and $EP$ for the KITTI dataset.
+                Specifically, for sequence 08 which only contains reverse loop closure, our approach still exhibits
+                superior performance while most handcrafted-based methods suffer from significant degradation.
+                This proves that our method possesses good rotational invariance.
+                For the KITTI-360 dataset, our method can still get competitive results, demonstrating its generalization capability. 
+              </p>
+              <br>
+              <img class="img-fluid" src="images/lcd_2.png" width="45%">
+              <p class="text-justify">
+                &nbsp;&nbsp;Furthermore, to investigate the loop closure detection performance at further distances, 
+                we followed OverlapNet and OverlapTransformer to regard two LiDAR scans as a loop closure when their overlap ratio is beyond 0.3, which indicates that the maximum possible distance between them is around 15m.
+                We adopt the same experimental setup as theirs to evaluate our method on the KITTI 00 sequence using AUC, F1max, Recall@1, and Recall@1% as metrics.
+                Due to BoW3D leaning more towards geometric verification, we are unable to generate its AUC and recall@1% results from its open-source implementation.
+                From the results, our method significantly outperforms SOTA baselines in terms of overall metric, indicating its robustness for detecting long-distance loop closures.
+                Although GOSMatch also has a commendable recall capability, its F1max score is slightly inferior to other methods, indicating an insufficient capability to accurately determine true loop closure.
+              </p>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+<section>
+  <div class="container">
+      <div class="row">
+          <div class="col text-center">
+              <h5 class="text-left"><li><b>Loop Pose Estimation</b></li></h5>
+              <br>
+              <img class="img-fluid" src="images/pose_1.png" width="100%">
+              <br>
+              <br>
+              <p class="text-justify">
+                &nbsp;&nbsp;As shown on the left, our method achieves competitive results compared to LCDNet, and exceeds LCDNet (fast) and BoW3D by a large margin on the KITTI dataset of the closed loop within 4 meters.
+                Both in the same direction loop correction in sequence 00 and reverse loop correction in sequence 08, our method and LCDNet get a high registration recall (RR) while BoW3D and LCDNet (fast) degrade significantly in reverse loop correction.
+                In terms of RTE, our method excels over LCDNet, demonstrating its superior performance in translation estimation.
+                To further highlight the gap between these methods, we test them on loop pairs with an overlap ratio exceeding 0.3.
+                The comparison results are presented on the right.
+                It can be seen that our method still maintains strong registration performance and surpasses all others across all metrics, emphasizing its robustness.
+                In comparison, LCDNet experienced a performance decline when performing registration with low overlap.  
+              </p>
+              <br>
+              <img class="img-fluid" src="images/pose_2.png" width="50%">
+              <p class="text-justify">
+                &nbsp;&nbsp;This table shows the results on the KITTI-360 dataset with close loop within 4\,m. 
+                We also report the average running time for all methods on our machine.
+                From the registration results, our method remains competitive compared to other baselines, demonstrating the generalizability of our approach.
+                Additionally, our method achieves the fastest running speed and significantly outperforms other methods even when the time of semantic segmentation is included, approximately 67.1ms for SegNet4D.
+                By comparison, LCDNet operates with extreme time consumption, rendering it unsuitable for real-time SLAM systems. 
+              </p>
+              <img class="img-fluid" src="images/registration.jpg" width="100%">
+              <p class="text-justify">
+                &nbsp;&nbsp;We also present the qualitative results. 
+                As can be seen,  our method achieves better alignment even in low overlap loop closure, attributing to the semantically-guided coarse-fine-refine point cloud alignment process.
+              </p>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+      <div class="row">
+          <div class="col text-center">
+              <h5 class="text-left"><li><b>SLAM</b></li></h5>
+              <br>
+              <img class="img-fluid" src="images/slam.jpg" width="60%">
+              <br>
+              <br>
+              <p class="text-justify">
+                &nbsp;&nbsp;The trajectory of A-LOAM odometry (left) compared to with integrating BoW3D loop closing method (middle) and integrating our approach (right) on the KITTI 00 sequence.
+                <br>
+                &nbsp;&nbsp;We integrate our method into the A-LOAM odometry to eliminate cumulative errors for evaluating the accuracy of SLAM trajectories, and compare the results with baseline integrated with BoW3D.
+                We utilize a Incremental Smoothing and Mapping iSAM2 based pose-graph optimization <a href="https://github.com/gisbi-kim/SC-A-LOAM" target="_blank">PGO</a> framework to build a factor graph for managing the the keyframe poses.
+                If a loop closure is detected, we will add this loop closure constraint into the factor graph to eliminate errors and ensure global consistency.
+                As shown in picture,  we present the trajectory error analysis between keyframe and ground truth poses.
+                From the results, our method significantly enhances the SLAM system by reducing the cumulative odometry error, and shows superior performance compared to the baseline that incorporates BoW3D. This improvement is attributed to the excellent loop closing capability of our approach.
+              </p>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+      <div class="row">
+          <div class="col text-center">
+              <h5 class="text-left"><li><b>Conclusion</b></li></h5>
+              <!-- <br>
+              <img class="img-fluid" src="images/instance.png" width="90%">
+              <br> -->
+              <br>
+              <p class="text-justify">
+                &nbsp;&nbsp;This paper presents a semantic graph-guided approach for LiDAR-based loop closing.
+                It initially builds a semantic graph of the foreground instances, which serves as the foundation for descriptor generation and guides subsequent steps in geometric verification and pose estimation.
+                The designed LiDAR scan descriptor leverages both the semantic graph's topological properties and the appearance characteristics of the background point cloud, thereby enhancing its robustness in loop closure detection.
+                For loop pose estimation, we proposed a coarse-fine-refine registration scheme that considers the alignment of both instance points and background points, offering high efficiency and accuracy.
+                The proposed method supports real-time online operation and is convenient for integration into SLAM systems, particularly semantic SLAM.
+                The experimental results on different datasets demonstrate its superiority.</p>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+
+<!-- Acknowledgements -->
+<!-- <section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h3>Acknowledgements</h3>
+        <hr style="margin-top:0px">
+        <p class="text-left"> 
+          We would like to thank Yufei Wang and Mochu Xiang for their insightful and effective discussions. <br/>And we would like to thank HAOMO.AI for the support of this work.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<br> -->
+
+<!-- citing -->
+<!-- <div class="container">
+  <div class="row ">
+    <div class="col-12">
+      <h3>Citation</h3>
+      <hr style="margin-top:0px">
+      <pre style="background-color: #e9eeef;padding: 1.25em 1.5em">
+<code>@inproceedings{wang2023insmos,
+  title={InsMOS: Instance-Aware Moving Object Segmentation in LiDAR Data},
+  author={Wang, Neng and Shi, chenghao and Guo, Ruibin and Lu, Huimin and Zheng, Zhiqiang and Chen, Xieyuanli},
+  booktitle={IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
+  year={2023},
+  organization={IEEE}
+}
+</code></pre>
+      <hr>
+    </div>
+  </div>
+</div> -->
+
+<footer class="text-center" style="margin-bottom:10px">
+  <br>
+  Thanks to <a href="https://lioryariv.github.io/" target="_blank">Lior Yariv</a> for the website template.
+</footer>
+
+</body>
+
+</html>
