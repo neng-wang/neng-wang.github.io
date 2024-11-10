@@ -37,17 +37,17 @@
           <h4 style="color:#5a6268;">arXiv 2024</h4>
           <hr>
           <h6>
-            <a href="https://neng-wang.github.io" target="_blank">Neng Wang</a><sup>1*</sup>,
+            <a href="https://neng-wang.github.io" target="_blank">Neng Wang</a><sup>1</sup>,
             <!-- <a href="https://scholar.google.com/citations?user=fddAbqsAAAAJ&hl=en" target="_blank">Yuchao Dai</a><sup>1</sup>,
             <a href="https://github.com/zoojing" target="_blank">Xianjing Zhang</a><sup>2</sup>, -->
-            <a href="https://github.com/Chen-Xieyuanli" target="_blank">Xieyuanli Chen</a><sup>1*</sup>
+            <a href="https://github.com/Chen-Xieyuanli" target="_blank">Xieyuanli Chen</a><sup>1</sup>
             Chenghao Shi<sup>1</sup>, Zhiqiang Zheng<sup>1</sup>, Hongshan Yu<sup>2</sup>, Huimin Lu<sup>1</sup>
             
 
           </h6>
           <p>1:National University of Defense Technology,&nbsp;&nbsp; 2:Hunan University &nbsp;&nbsp;
             <br>
-            <sup>*</sup>denotes equal contribution &nbsp;&nbsp;
+            <!-- <sup>*</sup>denotes equal contribution &nbsp;&nbsp; -->
             <br>
           </p>
 
@@ -170,7 +170,7 @@
           <h3>Experiments</h3>
           <hr style="margin-top:0px">
           <p class="text-justify">
-            &nbsp;&nbsp;We evaluate our method on two publicly available datasets: KITTI and KITTI-360.
+            &nbsp;&nbsp;We evaluate our method on  KITTI and KITTI-360 datasets. Additionally, Ford Campus and Apollo datasets are used to test its generalization ability
             KITTI includes 11 sequences with ground truth poses, among which six sequences (00, 02, 05, 06, 07, 08) contain loop closures and sequence 08 contains reverse loop closures.
             KITTI-360 is composed of 9 sequences, with 6 of them containing loops. 
             Compared to KITTI, KITTI-360 has a greater number of loop closures and reverse loop closures.
@@ -189,25 +189,34 @@
           <div class="col text-center">
               <h5 class="text-left"><li><b>Loop Clousre Detection</b></li></h5>
               <br>
-              <img class="img-fluid" src="images/lcd_1.png" width="100%">
+              <img class="img-fluid" src="images/lcd_1.png" width="90%">
               <br>
               <br>
               <p class="text-justify">
                 &nbsp;&nbsp;Our method outperforms SOTA on multiple sequences and achieves the best average F1max score and $EP$ for the KITTI dataset.
-                Specifically, for sequence 08 which only contains reverse loop closure, our approach still exhibits
-                superior performance while most handcrafted-based methods suffer from significant degradation.
-                This proves that our method possesses good rotational invariance.
-                For the KITTI-360 dataset, our method can still get competitive results, demonstrating its generalization capability. 
+                Specifically, for sequence 08 with many reverse loop closures, our approach still exhibits
+                superior performance, proving its good rotational invariance.
+                And on the KITTI360 dataset, our method remains competitive.
+                Additionally, we report the average runtime for all methods, including descriptor generation and loop closure determination. 
+                Our method performs as fast as handcrafted methods while achieving superior performance in most cases, demonstrating both efficiency and effectiveness.
               </p>
-              <br>
               <img class="img-fluid" src="images/lcd_2.png" width="45%">
               <p class="text-justify">
                 &nbsp;&nbsp;Furthermore, to investigate the loop closure detection performance at further distances, 
-                we followed OverlapNet and OverlapTransformer to regard two LiDAR scans as a loop closure when their overlap ratio is beyond 0.3, which indicates that the maximum possible distance between them is around 15m.
-                We adopt the same experimental setup as theirs to evaluate our method on the KITTI 00 sequence using AUC, F1max, Recall@1, and Recall@1% as metrics.
+                we followedregarding two LiDAR scans as a loop closure when their overlap ratio is beyond 0.3, which indicates that the maximum possible distance between them is around 15\,m.
+                And we adopt the same experimental setup as theirs to evaluate our method on the KITTI 00 sequence using AUC, F1max, Recall@1, and Recall@1% as metrics.
+                The results are shown in tabel.
                 Due to BoW3D leaning more towards geometric verification, we are unable to generate its AUC and recall@1% results from its open-source implementation.
-                From the results, our method significantly outperforms SOTA baselines in terms of overall metric, indicating its robustness for detecting long-distance loop closures.
-                Although GOSMatch also has a commendable recall capability, its F1max score is slightly inferior to other methods, indicating an insufficient capability to accurately determine true loop closure.
+                From the results, our method significantly outperforms SOTA baselines in terms of overall metric, indicating its robustness.
+              </p>
+              <img class="img-fluid" src="images/lcd_3.png" width="45%">
+              <p class="text-justify">
+                &nbsp;&nbsp;To evaluate the generalization capability of SGLC, we conducted additional experiments on the Ford Campus and Apollo datasets, focusing on loop pairs with an overlap ratio greater than 0.3. We primarily compared semantic-assisted methods to assess their adaptability to scene semantic changes or label quality declines. Due to the page limitation, we show the semantic segmentation details in our online supplementary. 
+                As shown in the table, 
+                our method demonstrates the best performance on both the Ford Campus and Apollo datasets, highlighting its strong generalization capability.
+                When the quality of semantic segmentation declines, some instances may be partially segmented, but after clustering, they still form a single object, which does not affect the construction of our semantic graph.  
+                Once the semantic graph is built, the LiDAR scan descriptors retrieve multiple candidate scans, including the correct loop scan. Through our geometric verification via graph matching, the true loop closure is identified.
+                Besides, for short-term loop closing in SLAM, static vehicles can serve as valuable feature nodes to enhance loop detection.
               </p>
           </div>
       </div>
@@ -221,28 +230,24 @@
           <div class="col text-center">
               <h5 class="text-left"><li><b>Loop Pose Estimation</b></li></h5>
               <br>
-              <img class="img-fluid" src="images/pose_1.png" width="100%">
+              <img class="img-fluid" src="images/pose_1.png" width="900%">
               <br>
               <br>
               <p class="text-justify">
-                &nbsp;&nbsp;As shown on the left, our method achieves competitive results compared to LCDNet, and exceeds LCDNet (fast) and BoW3D by a large margin on the KITTI dataset of the closed loop within 4 meters.
-                Both in the same direction loop correction in sequence 00 and reverse loop correction in sequence 08, our method and LCDNet get a high registration recall (RR) while BoW3D and LCDNet (fast) degrade significantly in reverse loop correction.
-                In terms of RTE, our method excels over LCDNet, demonstrating its superior performance in translation estimation.
-                To further highlight the gap between these methods, we test them on loop pairs with an overlap ratio exceeding 0.3.
-                The comparison results are presented on the right.
-                It can be seen that our method still maintains strong registration performance and surpasses all others across all metrics, emphasizing its robustness.
-                In comparison, LCDNet experienced a performance decline when performing registration with low overlap.  
+                &nbsp;&nbsp;As shown on the table, Our method achieves the best loop pose estimation performance on both distance-based loop pairs and more challenging overlap-based loop pairs.
+                Initially, both LCDNet and our method achieve a 100% RR for distance-based loop pairs.
+                However, for overlap-based loop pairs, LCDNet's performance declined, while our method still maintains superior registration capabilities, demonstrating its robustness for viewpoint changes.
+                In terms of alignment accuracy, our method also significantly outperforms other baselines.
+                We also report the average running time of pose estimation on our machine.
+                From the comparison, our method boasts the fastest running speed. The total runtime of our system, incorporating semantic segmentation, loop closure detection and poses estimation, is 98.1ms, 
+                less than the data acquisition time of 100~ms for a typical rotational LiDAR sensor, thereby rendering it suitable for real-time SLAM systems
               </p>
-              <br>
               <img class="img-fluid" src="images/pose_2.png" width="50%">
               <p class="text-justify">
-                &nbsp;&nbsp;This table shows the results on the KITTI-360 dataset with close loop within 4\,m. 
-                We also report the average running time for all methods on our machine.
-                From the registration results, our method remains competitive compared to other baselines, demonstrating the generalizability of our approach.
-                Additionally, our method achieves the fastest running speed and significantly outperforms other methods even when the time of semantic segmentation is included, approximately 67.1ms for SegNet4D.
-                By comparison, LCDNet operates with extreme time consumption, rendering it unsuitable for real-time SLAM systems. 
+                &nbsp;&nbsp;tab:loop_correction_kitti360 shows the results on the KITTI-360 dataset with distance-based close loop. 
+                It can be observed that LCDNet exhibits the best generalization ability, but our method remains competitive and  has the best alignment accuracy, considering both RTE and RRE.
               </p>
-              <img class="img-fluid" src="images/registration.jpg" width="100%">
+              <img class="img-fluid" src="images/registration.jpg" width="900%">
               <p class="text-justify">
                 &nbsp;&nbsp;We also present the qualitative results. 
                 As can be seen,  our method achieves better alignment even in low overlap loop closure, attributing to the semantically-guided coarse-fine-refine point cloud alignment process.
@@ -270,6 +275,27 @@
                 As shown in picture,  we present the trajectory error analysis between keyframe and ground truth poses.
                 From the results, our method significantly enhances the SLAM system by reducing the cumulative odometry error, and shows superior performance compared to the baseline that incorporates BoW3D. This improvement is attributed to the excellent loop closing capability of our approach.
               </p>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+      <div class="row">
+          <div class="col text-center">
+              <h5 class="text-left"><li><b>Conclusion</b></li></h5>
+              <!-- <br>
+              <img class="img-fluid" src="images/instance.png" width="90%">
+              <br> -->
+              <br>
+              <p class="text-justify">
+                &nbsp;&nbsp;This paper presents a semantic graph-guided approach for LiDAR-based loop closing.
+                It initially builds a semantic graph of the foreground instances, which serves as the foundation for descriptor generation and guides subsequent steps in geometric verification and pose estimation.
+                The designed LiDAR scan descriptor leverages both the semantic graph's topological properties and the appearance characteristics of the background point cloud, thereby enhancing its robustness in loop closure detection.
+                For loop pose estimation, we proposed a coarse-fine-refine registration scheme that considers the alignment of both instance points and background points, offering high efficiency and accuracy.
+                The proposed method supports real-time online operation and is convenient for integration into SLAM systems, particularly semantic SLAM.
+                The experimental results on different datasets demonstrate its superiority.</p>
           </div>
       </div>
   </div>

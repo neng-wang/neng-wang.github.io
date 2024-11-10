@@ -45,6 +45,23 @@ pubs:
         - name: "Data"
           url: https://1drv.ms/f/s!Ak6KrcxOqwZfkABaeJYYLb7ZT7Fg?e=zguXiK
 
+    - title:   "SGLC: Semantic Graph-Guided Coarse-Fine-Refine Full Loop Closing for LiDAR SLAM"
+      author:  "**Neng Wang**, Xieyuanli Chen, Chenghao Shi, Zhiqiang Zheng, Hongshan Yu, Huimin Lu"
+      journal: "IEEE Robotics and Automation Letters (RAL)"
+      year:    "2024"
+      image:   "/images/SGLC.gif"
+      media:
+        - name: "Page"
+          url:  https://neng-wang.github.io/SGLC/
+        - name: "Paper"
+          # url:  
+        - name: "arXiv"
+          url: https://arxiv.org/abs/2407.08106
+        - name: "Code"
+          url: https://github.com/nubot-nudt/SGLC
+        # - name: "Data"
+        #   url: https://1drv.ms/f/s!Ak6KrcxOqwZfkABaeJYYLb7ZT7Fg?e=zguXiK
+
     - title:   "Diffusion-Based Point Cloud Super-Resolution for mmWave Radar Data"
       author:  "Kai Luan, Chenghao Shi, **Neng Wang**, Yuwei Cheng, Huimin Lu, Xieyuanli Chen"
       journal: "Proceedings of the IEEE International Conference on Robotics and Automation (ICRA)"
@@ -64,8 +81,8 @@ pubs:
 
 news:
     shown:
-      # - time: Jul 26, 2023
-      #   note: One paper accepted to ACM MM 2023 &#127881;
+      - time: Oct 22, 2024
+        note: Our paper <a href="https://github.com/nubot-nudt/SGLC" target="_blank">SGLC</a> accepted to RAL 2024 &#128079;
       - time: Jan 30, 2024
         note: 1 paper is accepted to ICRA 2024 &#128079;
       - time: Jul 10, 2023
@@ -81,7 +98,7 @@ news:
 <!-- About me -->
 {% include image.html url="images/wangneng.jpeg" caption="" width="240px" align="right" %}
 
-I am a 2nd year Ph.D student at [NuBot] group, National University of Defense Technology([NUDT]). I am under the supervision of Prof. Zhiqiang Zheng and receive collaborative guidance from Prof. Huimin Lu and [Assoc. Prof. Xieyuanli Chen]. My current research focuses on Point Cloud Understanding and SLAM. Previously, I studied at Southwest Petroleum University([SWPU]) and obtained a bachelor’s degree, with the honor of Outstanding Graduate. I then direct entry for doctoral program at [NUDT].
+I am a 3nd year Ph.D student at [NuBot] group, National University of Defense Technology([NUDT]). I am under the supervision of Prof. Zhiqiang Zheng and receive collaborative guidance from Prof. Huimin Lu and [Assoc. Prof. Xieyuanli Chen]. My current research focuses on Point Cloud Understanding and SLAM. Previously, I studied at Southwest Petroleum University([SWPU]) and obtained a bachelor’s degree, with the honor of Outstanding Graduate. I then direct entry for doctoral program at [NUDT].
 
 
 

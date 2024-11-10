@@ -4,10 +4,10 @@
 <head>
   <meta name="google-site-verification" content="QPBDjBshVKPivIRMQQwDWikbMtLBLr3S-wzAZq4ZXeg" />
   <meta charset="utf-8">
-  <meta name="description" content="Interactive4D: Interactive 4D LiDAR Segmentation">
-  <meta name="keywords" content="4D Interactive Segmentation, Semantic Segmentation, 4D, Interactive4D">
+  <meta name="description" content="SegNet4D">
+  <meta name="keywords" content="4D Semantic Segmentation, Moving Object Segmentation">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>SegNet4D: Efficient Instance-Aware 4D LiDAR Semantic Segmentation for Driving Scenarios</title>
+  <title>SegNet4D</title>
 
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
@@ -29,9 +29,8 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Interactive4D <img src="logo.svg" class="center" width=100
-                alt="logo of the project"></h1>
-            <h1 class="title is-2 publication-title">Interactive 4D LiDAR Segmentation</h1>
+            <h1 class="title is-1 publication-title">SegNet4D </h1>
+            <h1 class="title is-2 publication-title">Efficient Instance-Aware 4D LiDAR Semantic Segmentation for Driving Scenarios</h1>
 
             <!-- <div class="column is-full_width"> -->
             <!--   <h2 class="title is-4">conference</h2> -->
@@ -39,23 +38,32 @@
 
             <div class="is-size-5 publication-authors">
               <span class="author-block">
-                <a href="https://github.com/Ilya-Fradlin/">Ilya Fradlin</a></span>,
+                <a href="https://github.com/neng-wang/">Neng Wang</a></span>,
               <span class="author-block">
-                <a href="https://www.vision.rwth-aachen.de/person/245/">Idil Esen Zulfikar</a></span>,
+                Ruibin Guo</a></span>,
               </span>
               <span class="author-block">
-                <a href="https://github.com/YilmazKadir/">Kadir Yilmaz</a></span>,
+                <a href="https://github.com/chenghao-shi">Chenghao Shi</a></span>,
               </span> 
               <span class="author-block">
-                <a href="https://theodorakontogianni.github.io/">Theodora Kontogianni</a></span>,
+                Ziyue Wang</a></span>,
               </span>  
               <span class="author-block">
-                <a href="https://www.vision.rwth-aachen.de/person/1/">Bastian Leibe</a></span>
+                Hui Zhang</a></span>
               </span>
+              <span class="author-block">
+                <a href="https://www.researchgate.net/profile/Huimin-Lu-3">Huimin Lu</a></span>,
+              </span> 
+              <span class="author-block">
+                Zhiqiang Zheng</a></span>
+              </span>
+              <span class="author-block">
+                <a href="https://www.researchgate.net/profile/Xieyuanli-Chen/research">Xieyuanli Chen</a></span>,
+              </span> 
             </div>
 
             <div class="is-size-5 publication-authors">
-              <span class="author-block">RWTH Aachen University</span>
+              <span class="author-block">National University of Defense Technology, Changsha, China.</span>
             </div>
 
             <div class="column has-text-centered">
@@ -63,7 +71,7 @@
 
                 <!-- PDF Link. -->
                 <span class="link-block">
-                  <a href="https://arxiv.org/abs/2410.08206" class="external-link button is-normal is-rounded is-dark">
+                  <a href=" " class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fas fa-file-pdf"></i>
                     </span>
@@ -73,7 +81,7 @@
 
                 <!-- Code Link. -->
                 <span class="link-block">
-                  <a href="https://github.com/Ilya-Fradlin/Interactive4D"
+                  <a href="https://github.com/nubot-nudt/SegNet4D"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -97,18 +105,20 @@
   <section class="hero teaser">
     <div class="container is-max-desktop">
       <div class="hero-body">
-        <video autoplay muted loop style="width: 100%;">
+        <img class="img-fluid" src="./static/videos/demo.gif" alt="SegNet4D Demo" style="width: 100%;"">
+        <!-- <video autoplay muted loop style="width: 100%;">
           <source src="https://omnomnom.vision.rwth-aachen.de/data/interactive4d/teaser_video.mp4" type="video/mp4">
           Your browser does not support the video tag.
-        </video>
-        <br><br>
-        <h2 class="subtitle has-text-centered">
-        </h2>
+        </video> -->
+        <!-- <br><br> -->
+        <!-- <h2 class="subtitle has-text-centered"> -->
+        <!-- </h2> -->
       </div>
     </div>
   </section>
 
   <section class="section">
+    
     <div class="container is-max-desktop">
       <!-- Abstract. -->
       <div class="columns is-centered has-text-centered">
@@ -117,24 +127,24 @@
           <div class="content has-text-justified">
             <p>
               <b>TL;DR: 
-                Interactive 4D segmentation is a new paradigm that segments multiple objects across consecutive LiDAR scans in a single step, 
-                improving efficiency and consistency while simplifying tracking and annotation.
+                4D LiDAR semantic segmentation, also referred to as multi-scan semantic segmentation, 
+                plays a crucial role in enhancing the environmental understanding capabilities of autonomous robots. 
+                It classifies the semantic category of each LiDAR point and detects whether it is dynamic, a critical ability for tasks like obstacle avoidance and autonomous navigation. 
               </b>
             </p>
             <p>
-                Interactive segmentation has an important role in facilitating the annotation process of future LiDAR datasets. 
-                Existing approaches sequentially segment individual objects at each LiDAR scan, repeating the process throughout the entire sequence, 
-                which is redundant and ineffective. 
+              Existing approaches often rely on computationally heavy 4D convolutions or recursive networks, 
+              which result in poor real-time performance, making them unsuitable for online robotics and autonomous driving applications.
             </p>  
             <p>
-                In this work, we propose interactive 4D segmentation, a new paradigm that allows segmenting multiple objects on multiple LiDAR scans simultaneously, 
-                and Interactive4D, the first interactive 4D segmentation model that segments multiple objects on superimposed consecutive LiDAR scans in a single iteration by utilizing the sequential nature of LiDAR data. 
-                While performing interactive segmentation, our model leverages the entire space-time volume, leading to more efficient segmentation. 
-                Operating on the 4D volume, it directly provides consistent instance IDs over time and also simplifies tracking annotations. 
+              In this paper, we introduce SegNet4D, a novel real-time 4D semantic segmentation network offering both efficiency and strong semantic understanding. 
+              SegNet4D addresses 4D segmentation as two tasks: single-scan semantic segmentation and moving object segmentation, each tackled by a separate network head. 
+              Both results are combined in a motion-semantic fusion module to achieve comprehensive 4D segmentation.
+              Additionally, instance information is extracted from the current scan and exploited for instance-wise segmentation consistency. 
             </p>
             <p>
-                Moreover, we show that click simulations are crucial for successful model training on LiDAR point clouds. To this end, we design a click simulation strategy that is better suited for the
-                characteristics of LiDAR data. To demonstrate its accuracy and effectiveness, we evaluate Interactive4D on multiple LiDAR datasets, where Interactive4D achieves a new state-of-the-art by a large margin.  <br />
+              Our approach surpasses state-of-the-art in both multi-scan semantic segmentation and moving object segmentation while offering greater efficiency, enabling real-time operation.
+              Besides, its effectiveness and efficiency have also been validated on a real-world robotic platform.  <br />
                 <!-- We will publicly release code and models upon acceptance. -->
             </p>
                 
@@ -146,8 +156,8 @@
         <div class="column is-four-fifths">
           <h2 class="title is-3">Video</h2>
           <div class="publication-video">
-            <video controls poster="./static/images/poster.png">
-              <source src="https://omnomnom.vision.rwth-aachen.de/data/interactive4d/3min_explanation.mp4"
+            <video controls poster="./static/images/cover.jpg">
+              <source src="https://onedrive.live.com/?redeem=aHR0cHM6Ly8xZHJ2Lm1zL2YvYy81ZjA2YWI0ZWNjYWQ4YTRlL0VqUWVjZTgtbFZoTWtKTDVIOFFyNk5NQlptbGN6WUJ3R01xd0VfSi1iTkpGTEE%5FZT1xc2k2cjA&cid=5F06AB4ECCAD8A4E&id=5F06AB4ECCAD8A4E%21sc3b620f34a6041b2a77e8d6d18d1968f&parId=5F06AB4ECCAD8A4E%21sef711e34953e4c589092f91fc42be8d3&o=OneUp"
                 type="video/mp4">
               Your browser does not support the video tag.
             </video>
@@ -163,21 +173,21 @@
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
       <pre><code>
-      @article{fradlin2024interactive4d,
-        title     = {{Interactive4D: Interactive 4D LiDAR Segmentation}},
-        author    = {Fradlin, Ilya and Zulfikar, Idil Esen and Yilmaz, Kadir and Kontogianni, Thodora and Leibe, Bastian},
-        journal   = {arXiv preprint arXiv:2410.08206},
+      @article{wang2024segnet4d,
+        title     = {{SegNet4D: Efficient Instance-Aware 4D LiDAR Semantic Segmentation for Driving Scenarios}},
+        author    = {Neng, Wang and Ruibin, Guo and Chenghao, Shi and Ziyue, Wang and Hui, Zhang and Huimin, Lu and Zhiqiang, Zheng and Xieyuanali, Chen},
+        journal   = {arXiv},
         year      = {2024}
       }
       </code></pre>
     </div>
   </section>
 
-  <section class="section" id="Acknowledgment">
+  <!-- <section class="section" id="Acknowledgment">
     <div class="container is-max-desktop content">
       <h2 class="title">Acknowledgment</h2>
       We thank Yuanwen Yue, Daan de Geus, and Alexander Hermans for their helpful feedback and discussions. We also thank all our annotators who participated in the user study. Theodora Kontogianni is a postdoctoral research fellow at the ETH AI Center and her research is partially funded by the Hasler Stiftung Grant project (23069). Idil Esen Zulfikar’s research is funded by the BMBF project NeuroSys-D (03ZU1106DA). Kadir Yilmaz's research is funded by the Bosch-RWTH LHC project Context Understanding for Autonomous Systems. The computing resources for most of the experiments were granted by the Gauss Centre for Supercomputing e.V. through the John von Neumann Institute for Computing on the GCS Supercomputer JUWELS at Julich Supercomputing Centre.    </div>
-  </section>
+  </section> -->
 
   <footer class="footer">
     <div class="container">
