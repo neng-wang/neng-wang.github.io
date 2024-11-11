@@ -82,13 +82,13 @@ pubs:
 news:
     shown:
       - time: Oct 22, 2024
-        note: Our paper <a href="https://github.com/nubot-nudt/SGLC" target="_blank">SGLC</a> accepted to RAL 2024 &#128079;
+        note: Our paper <a href="https://github.com/nubot-nudt/SGLC" target="_blank">SGLC</a> is accepted to RAL 2024 &#128079;
       - time: Jan 30, 2024
         note: 1 paper is accepted to ICRA 2024 &#128079;
       - time: Jul 10, 2023
         note: We get the Best-in-Class Dexterity in RoboCup2023 &#127867;&#127881;
       - time: Jun 22, 2023
-        note: Our paper <a href="https://github.com/nubot-nudt/InsMOS" target="_blank">InsMOS</a> accepted to IROS 2023 &#128079;
+        note: Our paper <a href="https://github.com/nubot-nudt/InsMOS" target="_blank">InsMOS</a> is accepted to IROS 2023 &#128079;
 
     # hidden:
 
@@ -98,7 +98,7 @@ news:
 <!-- About me -->
 {% include image.html url="images/wangneng.jpeg" caption="" width="240px" align="right" %}
 
-I am a 3nd year Ph.D student at [NuBot] group, National University of Defense Technology([NUDT]). I am under the supervision of Prof. Zhiqiang Zheng and receive collaborative guidance from Prof. Huimin Lu and [Assoc. Prof. Xieyuanli Chen]. My current research focuses on Point Cloud Understanding and SLAM. Previously, I studied at Southwest Petroleum University([SWPU]) and obtained a bachelor’s degree, with the honor of Outstanding Graduate. I then direct entry for doctoral program at [NUDT].
+I am a Ph.D candidate at [NuBot] group, National University of Defense Technology([NUDT]). I am under the supervision of Prof. Zhiqiang Zheng and receive collaborative guidance from Prof. Huimin Lu and [Assoc. Prof. Xieyuanli Chen]. My current research focuses on Point Cloud Understanding and SLAM. Previously, I studied at Southwest Petroleum University([SWPU]) and obtained a bachelor’s degree, with the honor of Outstanding Graduate. I then direct entry for doctoral program at [NUDT].
 
 
 
