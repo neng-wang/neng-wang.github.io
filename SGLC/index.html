@@ -151,7 +151,7 @@
           <br>
           <br>
           <p class="text-justify">
-            &nbsp;&nbsp;<strong>SGLC Framework</strong>. The framework of SGLC. 
+            &nbsp;&nbsp; The framework of SGLC. 
             It first builds a semantic graph for foreground instances and then generates LiDAR scan descriptor considering both the topological properties of the semantic graph and the appearance characteristics of the background.
             The LiDAR scan descriptor is utilized to retrieve loop candidate scans from the database.
             Following this,  geometric verification is performed on each loop candidate to filter out false loop closure, with the key step utilizing the instance node descriptors for robust sparse node matching.
@@ -244,7 +244,7 @@
               </p>
               <img class="img-fluid" src="images/pose_2.png" width="50%">
               <p class="text-justify">
-                &nbsp;&nbsp;tab:loop_correction_kitti360 shows the results on the KITTI-360 dataset with distance-based close loop. 
+                &nbsp;&nbsp;The table shows the results on the KITTI-360 dataset with distance-based close loop. 
                 It can be observed that LCDNet exhibits the best generalization ability, but our method remains competitive and  has the best alignment accuracy, considering both RTE and RRE.
               </p>
               <img class="img-fluid" src="images/registration.jpg" width="900%">
@@ -280,26 +280,6 @@
   </div>
 </section>
 
-<section>
-  <div class="container">
-      <div class="row">
-          <div class="col text-center">
-              <h5 class="text-left"><li><b>Conclusion</b></li></h5>
-              <!-- <br>
-              <img class="img-fluid" src="images/instance.png" width="90%">
-              <br> -->
-              <br>
-              <p class="text-justify">
-                &nbsp;&nbsp;This paper presents a semantic graph-guided approach for LiDAR-based loop closing.
-                It initially builds a semantic graph of the foreground instances, which serves as the foundation for descriptor generation and guides subsequent steps in geometric verification and pose estimation.
-                The designed LiDAR scan descriptor leverages both the semantic graph's topological properties and the appearance characteristics of the background point cloud, thereby enhancing its robustness in loop closure detection.
-                For loop pose estimation, we proposed a coarse-fine-refine registration scheme that considers the alignment of both instance points and background points, offering high efficiency and accuracy.
-                The proposed method supports real-time online operation and is convenient for integration into SLAM systems, particularly semantic SLAM.
-                The experimental results on different datasets demonstrate its superiority.</p>
-          </div>
-      </div>
-  </div>
-</section>
 
 <section>
   <div class="container">
