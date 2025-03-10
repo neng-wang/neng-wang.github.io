@@ -54,7 +54,7 @@ pubs:
         - name: "Page"
           url:  https://neng-wang.github.io/SGLC/
         - name: "Paper"
-          # url:  
+          url:  https://ieeexplore.ieee.org/document/10750042
         - name: "arXiv"
           url: https://arxiv.org/abs/2407.08106
         - name: "Code"
@@ -71,7 +71,7 @@ pubs:
         - name: "Page"
           #url:  https://neng-wang.github.io/InsMOS/
         - name: "Paper"
-          # url:  https://ieeexplore.ieee.org/document/9981210/
+          url:  https://ieeexplore.ieee.org/document/10611026
         - name: "arXiv"
           url: https://arxiv.org/pdf/2404.06012
         # - name: "Code"

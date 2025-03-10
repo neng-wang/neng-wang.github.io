@@ -29,7 +29,7 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">SG-SLAM </h1>
+            <h1 class="title is-1 publication-title">SG-SLAM</h1> 
             <h1 class="title is-2 publication-title">Leveraging Semantic Graphs for Efficient and Robust LiDAR SLAM</h1>
 
             <!-- <div class="column is-full_width"> -->
@@ -38,32 +38,28 @@
 
             <div class="is-size-5 publication-authors">
               <span class="author-block">
-                <a href="https://github.com/neng-wang/">Neng Wang</a></span>,
+                <a href="https://github.com/neng-wang/">Neng Wang</a><sup>1</sup></span>,
               <span class="author-block">
-                Ruibin Guo</a></span>,
+                <a href="https://scholar.google.com/citations?user=cp-6u7wAAAAJ&hl=zh-CN">Huimin Lu</a><sup>1</sup></span>,
               </span>
               <span class="author-block">
-                <a href="https://github.com/chenghao-shi">Chenghao Shi</a></span>,
+                <a href="https://github.com/chenghao-shi">Zhiqiang Zheng</a><sup>1</sup></span>,
               </span> 
               <span class="author-block">
-                Ziyue Wang</a></span>,
+                <a href="https://irmv.sjtu.edu.cn/wanghesheng">Hesheng Wang</a><sup>2</sup></span>,
               </span>  
               <span class="author-block">
-                Hui Zhang</a></span>
+                <a href="https://scholar.google.com.hk/citations?user=WzmDQTMAAAAJ&hl=en">Yun-Hui Liu</a><sup>3</sup></span>
               </span>
               <span class="author-block">
-                <a href="https://www.researchgate.net/profile/Huimin-Lu-3">Huimin Lu</a></span>,
-              </span> 
-              <span class="author-block">
-                Zhiqiang Zheng</a></span>
-              </span>
-              <span class="author-block">
-                <a href="https://www.researchgate.net/profile/Xieyuanli-Chen/research">Xieyuanli Chen</a></span>,
+                <a href="https://www.researchgate.net/profile/Xieyuanli-Chen/research">Xieyuanli Chen</a><sup>1</sup></span>
               </span> 
             </div>
 
             <div class="is-size-5 publication-authors">
-              <span class="author-block">National University of Defense Technology, Changsha, China.</span>
+              <span class="author-block"><sup>1</sup>National University of Defense Technology,</span>
+              <span class="author-block"><sup>2</sup>Shanghai Jiao Tong University,</span>
+              <span class="author-block"><sup>3</sup>Chinese University of Hong Kong</span>
             </div>
 
             <div class="column has-text-centered">
@@ -81,7 +77,7 @@
 
                 <!-- Code Link. -->
                 <span class="link-block">
-                  <a href="https://github.com/nubot-nudt/SegNet4D"
+                  <a href="https://github.com/nubot-nudt/SG-SLAM"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -105,7 +101,9 @@
   <section class="hero teaser">
     <div class="container is-max-desktop">
       <div class="hero-body">
-        <img class="img-fluid" src="./static/videos/demo.gif" alt="SegNet4D Demo" style="width: 100%;"">
+        <div style="text-align: center;">
+        <img class="img-fluid" src="./static/images/motivation.jpg" alt="SG-SLAM picture" style="width: 80%;"">
+      </div>
         <!-- <video autoplay muted loop style="width: 100%;">
           <source src="https://omnomnom.vision.rwth-aachen.de/data/interactive4d/teaser_video.mp4" type="video/mp4">
           Your browser does not support the video tag.
@@ -126,56 +124,85 @@
           <h2 class="title is-3">Abstract</h2>
           <div class="content has-text-justified">
             <p>
-              <b>TL;DR: 
-                4D LiDAR semantic segmentation, also referred to as multi-scan semantic segmentation, 
-                plays a crucial role in enhancing the environmental understanding capabilities of autonomous robots. 
-                It classifies the semantic category of each LiDAR measurement point and detects whether it is dynamic, a critical ability for tasks like obstacle avoidance and autonomous navigation. 
-              </b>
+              we propose a semantic graph-enhanced SLAM framework, named SG-SLAM, 
+              which effectively leverages the geometric, semantic, and topological characteristics inherent in environmental structures.
             </p>
             <p>
-              Existing approaches often rely on computationally heavy 4D convolutions or recursive networks, 
-              which result in poor real-time performance, making them unsuitable for online robotics and autonomous driving applications.
+              The semantic graph serves as a fundamental component that facilitates critical functionalities of SLAM, including robust
+              relocalization during odometry failures, accurate loop closing, and semantic graph map construction.
             </p>  
             <p>
-              In this paper, we introduce SegNet4D, a novel real-time 4D semantic segmentation network offering both efficiency and strong semantic understanding. 
-              SegNet4D addresses 4D segmentation as two tasks: single-scan semantic segmentation and moving object segmentation, each tackled by a separate network head. 
-              Both results are combined in a motion-semantic fusion module to achieve comprehensive 4D segmentation.
-              Additionally, instance information is extracted from the current scan and exploited for instance-wise segmentation consistency. 
+              Our method employs a dual-threaded architecture, with one thread dedicated to
+              online odometry and relocalization, while the other handles loop closure, pose graph optimization, and map update.
             </p>
             <p>
-              Our approach surpasses state-of-the-art in both multi-scan semantic segmentation and moving object segmentation while offering greater efficiency, enabling real-time operation.
-              Besides, its effectiveness and efficiency have also been validated on a real-world unmanned ground platform.  <br />
+              This design enables our method to operate in real time and generate globally
+              consistent semantic graph maps and point cloud maps. We  extensively evaluate our method across the KITTI, MulRAN,
+              and Apollo datasets, and the results demonstrate its superiority compared to state-of-the-art methods.<br />
                 <!-- We will publicly release code and models upon acceptance. -->
             </p>
-                
           </div>
         </div>
       </div>
       <!-- Paper video. -->
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
-          <h2 class="title is-3">Video</h2>
-          <div class="publication-video">
-            <video controls poster="./static/images/cover.jpg">
-              <source src="https://onedrive.live.com/?redeem=aHR0cHM6Ly8xZHJ2Lm1zL2YvYy81ZjA2YWI0ZWNjYWQ4YTRlL0VqUWVjZTgtbFZoTWtKTDVIOFFyNk5NQlptbGN6WUJ3R01xd0VfSi1iTkpGTEE%5FZT1xc2k2cjA&cid=5F06AB4ECCAD8A4E&id=5F06AB4ECCAD8A4E%21sc3b620f34a6041b2a77e8d6d18d1968f&parId=5F06AB4ECCAD8A4E%21sef711e34953e4c589092f91fc42be8d3&o=OneUp"
-                type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
-          </div>
+          <h2 class="title is-3">SLAM Demo</h2>
+          <img class="img-fluid" src="./static/videos/graph_slam.gif" alt="SLAM Demo" style="width: 100%;"">
         </div>
       </div>
       <!--/ Paper video. -->
     </div>
   </section>
 
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div style="text-align: center;">
+      <h2 class="title is-3">Odometry with Graph-based Relocalization</h2>
+        </div>
+      </br>
+      <div class="columns is-centered">
+        
+        <!-- Visual Effects. -->
+        <div class="column">
+            <!-- <div style="text-align: center;"> -->
+            <h2 class="title is-4"> Demo</h2>
+            <p>
+              This demo illustrates that our semantic graph-based relocalization algorithm 
+              significantly enhances the robustness of the odometry.
+            </p>
+            <img class="img-fluid" src="./static/videos/relocalization.gif" alt="SLAM Demo" style="width: 100%;"">
+        </div>
+      <!-- </div> -->
+        <!--/ Visual Effects. -->
+  
+        <!-- Matting. -->
+        <div class="column">
+          <!-- <div style="text-align: center;"> -->
+            <h2 class="title is-4">Path</h2>
+          <div class="columns is-centered">
+            <div class="column content">
+              <p>
+                We compare the path of odometry using SG-SLAM with the semantic graph-based relocalization (green)
+                and SG-SLAM without the relocalization (blue).
+              </p>
+              <img class="img-fluid" src="./static/videos/relocalization_path.gif" alt="SLAM Demo" style="width: 100%;"">
+            </div>
+          </div>
+          <!-- </div> -->
+        </div>
+      </div>
+    </div>
+  </section>
+      <!--/ Matting. -->
 
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
       <pre><code>
-      @article{wang2024segnet4d,
-        title     = {{SegNet4D: Efficient Instance-Aware 4D Semantic Segmentation for LiDAR Point Cloud}},
-        author    = {Neng, Wang and Ruibin, Guo and Chenghao, Shi and Ziyue, Wang and Hui, Zhang and Huimin, Lu and Zhiqiang, Zheng and Xieyuanali, Chen},
+      @article{wang2024sgslam,
+        title     = {{Leveraging Semantic Graphs for Efficient and Robust LiDAR SLAM}},
+        author    = {Neng, Wang and Huimin, Lu and Zhiqiang, Zheng and Hesheng, Wang and Yun-Hui, Liu and Xieyuanli, Chen},
         journal   = {arXiv},
         year      = {2024}
       }

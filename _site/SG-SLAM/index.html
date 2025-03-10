@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="google-site-verification" content="QPBDjBshVKPivIRMQQwDWikbMtLBLr3S-wzAZq4ZXeg" />
+  <meta charset="utf-8">
+  <meta name="description" content="SegNet4D">
+  <meta name="keywords" content="4D Semantic Segmentation, Moving Object Segmentation">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SG-SLAM</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+
+<body>
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">SG-SLAM</h1> 
+            <h1 class="title is-2 publication-title">Leveraging Semantic Graphs for Efficient and Robust LiDAR SLAM</h1>
+
+            <!-- <div class="column is-full_width"> -->
+            <!--   <h2 class="title is-4">conference</h2> -->
+            <!-- </div> -->
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <a href="https://github.com/neng-wang/">Neng Wang</a><sup>1</sup></span>,
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=cp-6u7wAAAAJ&hl=zh-CN">Huimin Lu</a><sup>1</sup></span>,
+              </span>
+              <span class="author-block">
+                <a href="https://github.com/chenghao-shi">Zhiqiang Zheng</a><sup>1</sup></span>,
+              </span> 
+              <span class="author-block">
+                <a href="https://irmv.sjtu.edu.cn/wanghesheng">Hesheng Wang</a><sup>2</sup></span>,
+              </span>  
+              <span class="author-block">
+                <a href="https://scholar.google.com.hk/citations?user=WzmDQTMAAAAJ&hl=en">Yun-Hui Liu</a><sup>3</sup></span>
+              </span>
+              <span class="author-block">
+                <a href="https://www.researchgate.net/profile/Xieyuanli-Chen/research">Xieyuanli Chen</a><sup>1</sup></span>
+              </span> 
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup>National University of Defense Technology,</span>
+              <span class="author-block"><sup>2</sup>Shanghai Jiao Tong University,</span>
+              <span class="author-block"><sup>3</sup>Chinese University of Hong Kong</span>
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+
+                <!-- PDF Link. -->
+                <span class="link-block">
+                  <a href=" " class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+
+                <!-- Code Link. -->
+                <span class="link-block">
+                  <a href="https://github.com/nubot-nudt/SG-SLAM"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+  </section>
+
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <div style="text-align: center;">
+        <img class="img-fluid" src="./static/images/motivation.jpg" alt="SG-SLAM picture" style="width: 80%;"">
+      </div>
+        <!-- <video autoplay muted loop style="width: 100%;">
+          <source src="https://omnomnom.vision.rwth-aachen.de/data/interactive4d/teaser_video.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video> -->
+        <!-- <br><br> -->
+        <!-- <h2 class="subtitle has-text-centered"> -->
+        <!-- </h2> -->
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    
+    <div class="container is-max-desktop">
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              we propose a semantic graph-enhanced SLAM framework, named SG-SLAM, 
+              which effectively leverages the geometric, semantic, and topological characteristics inherent in environmental structures.
+            </p>
+            <p>
+              The semantic graph serves as a fundamental component that facilitates critical functionalities of SLAM, including robust
+              relocalization during odometry failures, accurate loop closing, and semantic graph map construction.
+            </p>  
+            <p>
+              Our method employs a dual-threaded architecture, with one thread dedicated to
+              online odometry and relocalization, while the other handles loop closure, pose graph optimization, and map update.
+            </p>
+            <p>
+              This design enables our method to operate in real time and generate globally
+              consistent semantic graph maps and point cloud maps. We  extensively evaluate our method across the KITTI, MulRAN,
+              and Apollo datasets, and the results demonstrate its superiority compared to state-of-the-art methods.<br />
+                <!-- We will publicly release code and models upon acceptance. -->
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Paper video. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">SLAM Demo</h2>
+          <img class="img-fluid" src="./static/videos/graph_slam.gif" alt="SLAM Demo" style="width: 100%;"">
+        </div>
+      </div>
+      <!--/ Paper video. -->
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div style="text-align: center;">
+      <h2 class="title is-3">Odometry with Graph-based Relocalization</h2>
+        </div>
+      </br>
+      <div class="columns is-centered">
+        
+        <!-- Visual Effects. -->
+        <div class="column">
+            <!-- <div style="text-align: center;"> -->
+            <h2 class="title is-4"> Demo</h2>
+            <p>
+              This demo illustrates that our semantic graph-based relocalization algorithm 
+              significantly enhances the robustness of the odometry.
+            </p>
+            <img class="img-fluid" src="./static/videos/relocalization.gif" alt="SLAM Demo" style="width: 100%;"">
+        </div>
+      <!-- </div> -->
+        <!--/ Visual Effects. -->
+  
+        <!-- Matting. -->
+        <div class="column">
+          <!-- <div style="text-align: center;"> -->
+            <h2 class="title is-4">Path</h2>
+          <div class="columns is-centered">
+            <div class="column content">
+              <p>
+                We compare the path of odometry using SG-SLAM with the semantic graph-based relocalization (green)
+                and SG-SLAM without the relocalization (blue).
+              </p>
+              <img class="img-fluid" src="./static/videos/relocalization_path.gif" alt="SLAM Demo" style="width: 100%;"">
+            </div>
+          </div>
+          <!-- </div> -->
+        </div>
+      </div>
+    </div>
+  </section>
+      <!--/ Matting. -->
+
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>
+      @article{wang2024sgslam,
+        title     = {{Leveraging Semantic Graphs for Efficient and Robust LiDAR SLAM}},
+        author    = {Neng, Wang and Huimin, Lu and Zhiqiang, Zheng and Hesheng, Wang and Yun-Hui, Liu and Xieyuanli, Chen},
+        journal   = {arXiv},
+        year      = {2024}
+      }
+      </code></pre>
+    </div>
+  </section>
+
+  <!-- <section class="section" id="Acknowledgment">
+    <div class="container is-max-desktop content">
+      <h2 class="title">Acknowledgment</h2>
+      We thank Yuanwen Yue, Daan de Geus, and Alexander Hermans for their helpful feedback and discussions. We also thank all our annotators who participated in the user study. Theodora Kontogianni is a postdoctoral research fellow at the ETH AI Center and her research is partially funded by the Hasler Stiftung Grant project (23069). Idil Esen Zulfikar’s research is funded by the BMBF project NeuroSys-D (03ZU1106DA). Kadir Yilmaz's research is funded by the Bosch-RWTH LHC project Context Understanding for Autonomous Systems. The computing resources for most of the experiments were granted by the Gauss Centre for Supercomputing e.V. through the John von Neumann Institute for Computing on the GCS Supercomputer JUWELS at Julich Supercomputing Centre.    </div>
+  </section> -->
+
+  <footer class="footer">
+    <div class="container">
+      <div class="content has-text-centered">
+        <a class="icon-link" href="https://github.com/YilmazKadir" class="external-link" disabled>
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              This website is licensed under a <a rel="license"
+                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+                Commons Attribution-ShareAlike 4.0 International License</a>.
+            </p>
+            <p>
+              This webpage template is from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
+              We sincerely thank <a href="https://keunhong.com/">Keunhong Park</a> for developing and open-sourcing this
+              template.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
