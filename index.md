@@ -47,7 +47,7 @@ pubs:
 
     - title:   "SGLC: Semantic Graph-Guided Coarse-Fine-Refine Full Loop Closing for LiDAR SLAM"
       author:  "**Neng Wang**, Xieyuanli Chen, Chenghao Shi, Zhiqiang Zheng, Hongshan Yu, Huimin Lu"
-      journal: "IEEE Robotics and Automation Letters (RAL)"
+      journal: "IEEE Robotics and Automation Letters (RA-L)"
       year:    "2024"
       image:   "/images/SGLC.gif"
       media:
@@ -62,7 +62,7 @@ pubs:
           
     - title:   "SegNet4D: Efficient Instance-Aware 4D Semantic Segmentation for LiDAR Point Cloud"
       author:  "**Neng Wang**, Ruibin Guo, Chenghao Shi, Ziyue Wang, Hui Zhang, Huimin Lu, Zhiqiang Zheng, Xieyuanli Chen"
-      journal: "IEEE Transactions on Automation Science and Engineering (TASE)"
+      journal: "IEEE Transactions on Automation Science and Engineering (T-ASE)"
       year:    "2025"
       image:   "/SegNet4D/static/videos/demo.gif"
       media:
@@ -89,7 +89,7 @@ pubs:
 
     - title:   "Self-Supervised Diffusion-Based Scene Flow Estimation and Motion Segmentation With 4D Radar"
       author:  "Yufei Liu, Xieyuanli Chen, **Neng Wang**, Stepan Andreev, Alexander Dvorkovich, Rui Fan, Huimin Lu"
-      journal: "IEEE Robotics and Automation Letters (RAL)"
+      journal: "IEEE Robotics and Automation Letters (RA-L)"
       year:    "2025"
       image:   "/images/RadarSEFMOS.png"
       media:
@@ -211,7 +211,7 @@ Robotics, SLAM, Point Cloud Understanding
 [NuBot]: https://github.com/nubot-nudt
 [NUDT]: https://www.nudt.edu.cn/
 [SWPU]: https://www.swpu.edu.cn/en/
-[Assoc. Prof. Xieyuanli Chen]: http://xieyuanli-chen.com/
+[Assoc. Prof. Xieyuanli Chen]: https://chen-xieyuanli.github.io/
 [neng-wang]: https://github.com/neng-wang
 
 
