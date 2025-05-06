@@ -59,8 +59,21 @@ pubs:
           url: https://arxiv.org/abs/2407.08106
         - name: "Code"
           url: https://github.com/nubot-nudt/SGLC
-        # - name: "Data"
-        #   url: https://1drv.ms/f/s!Ak6KrcxOqwZfkABaeJYYLb7ZT7Fg?e=zguXiK
+          
+    - title:   "SegNet4D: Efficient Instance-Aware 4D Semantic Segmentation for LiDAR Point Cloud"
+      author:  "**Neng Wang**, Ruibin Guo, Chenghao Shi, Ziyue Wang, Hui Zhang, Huimin Lu, Zhiqiang Zheng, Xieyuanli Chen"
+      journal: "IEEE Transactions on Automation Science and Engineering (TASE)"
+      year:    "2025"
+      image:   "/SegNet4D/static/videos/demo.gif"
+      media:
+        - name: "Page"
+          url:  https://neng-wang.github.io/SegNet4D/
+        - name: "Paper"
+          # url:  https://ieeexplore.ieee.org/document/10750042
+        - name: "arXiv"
+          url: https://arxiv.org/abs/2406.16279
+        - name: "Code"
+          url: https://github.com/nubot-nudt/SegNet4D
 
     - title:   "Diffusion-Based Point Cloud Super-Resolution for mmWave Radar Data"
       author:  "Kai Luan, Chenghao Shi, **Neng Wang**, Yuwei Cheng, Huimin Lu, Xieyuanli Chen"
@@ -68,26 +81,35 @@ pubs:
       year:    "2024"
       image:   "/images/mmwave.png"
       media:
-        - name: "Page"
-          #url:  https://neng-wang.github.io/InsMOS/
         - name: "Paper"
           url:  https://ieeexplore.ieee.org/document/10611026
         - name: "arXiv"
           url: https://arxiv.org/pdf/2404.06012
-        # - name: "Code"
-        #   url: https://github.com/nubot-nudt/InsMOS
-        # - name: "Data"
-        #   url: https://1drv.ms/f/s!Ak6KrcxOqwZfkABaeJYYLb7ZT7Fg?e=zguXiK
 
+
+    - title:   "Self-Supervised Diffusion-Based Scene Flow Estimation and Motion Segmentation With 4D Radar"
+      author:  "Yufei Liu, Xieyuanli Chen, **Neng Wang**, Stepan Andreev, Alexander Dvorkovich, Rui Fan, Huimin Lu"
+      journal: "IEEE Robotics and Automation Letters (RAL)"
+      year:    "2025"
+      image:   "/images/RadarSEFMOS.png"
+      media:
+        - name: "Paper"
+          url:  https://ieeexplore.ieee.org/document/10974572
+        - name: "Code"
+          url: https://github.com/nubot-nudt/RadarSEFMOS
 news:
     shown:
-      - time: Oct 22, 2024
+      - time: May, 2025
+        note: Our paper <a href="https://github.com/nubot-nudt/SegNet4D" target="_blank">SegNet4D</a> is accepted to T-ASE 2025 &#128079;
+      - time: April, 2025
+        note: Our paper <a href="https://github.com/nubot-nudt/RadarSFEMOS" target="_blank">RadarSFEMOS</a> is accepted to RAL 2025 &#128079;
+      - time: Oct, 2024
         note: Our paper <a href="https://github.com/nubot-nudt/SGLC" target="_blank">SGLC</a> is accepted to RAL 2024 &#128079;
-      - time: Jan 30, 2024
+      - time: Jan, 2024
         note: 1 paper is accepted to ICRA 2024 &#128079;
-      - time: Jul 10, 2023
+      - time: Jul, 2023
         note: We get the Best-in-Class Dexterity in RoboCup2023 &#127867;&#127881;
-      - time: Jun 22, 2023
+      - time: Jun, 2023
         note: Our paper <a href="https://github.com/nubot-nudt/InsMOS" target="_blank">InsMOS</a> is accepted to IROS 2023 &#128079;
 
     # hidden:
