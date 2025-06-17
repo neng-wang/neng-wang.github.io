@@ -143,7 +143,7 @@ news:
         note: 3 paper is accepted to IROS 2025 &#128079;
       - time: May, 2025
         note: Our paper <a href="https://github.com/nubot-nudt/SegNet4D" target="_blank">SegNet4D</a> is accepted to T-ASE 2025 &#128079;
-      - time: April, 2025
+      - time: Apr, 2025
         note: Our paper <a href="https://github.com/nubot-nudt/RadarSFEMOS" target="_blank">RadarSFEMOS</a> is accepted to RA-L 2025 &#128079;
       - time: Oct, 2024
         note: Our paper <a href="https://github.com/nubot-nudt/SGLC" target="_blank">SGLC</a> is accepted to RA-L 2024 &#128079;
