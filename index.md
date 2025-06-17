@@ -69,11 +69,26 @@ pubs:
         - name: "Page"
           url:  https://neng-wang.github.io/SegNet4D/
         - name: "Paper"
-          # url:  https://ieeexplore.ieee.org/document/10750042
+          url:  https://ieeexplore.ieee.org/document/10993479
         - name: "arXiv"
           url: https://arxiv.org/abs/2406.16279
         - name: "Code"
           url: https://github.com/nubot-nudt/SegNet4D
+
+    - title:   "Leveraging Semantic Graphs for Efficient and Robust LiDAR SLAM"
+      author:  "**Neng Wang**, Huimin Lu, Zhiqiang Zheng, Hesheng Wang, Yun-Hui Liu, Xieyuanli Chen"
+      journal: "Proceedings of the IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)"
+      year:    "2025"
+      image:   "/SG-SLAM/static/videos/graph_slam.gif"
+      media:
+        - name: "Page"
+          url:  https://neng-wang.github.io/SG-SLAM/
+        - name: "Paper"
+          # url:  https://ieeexplore.ieee.org/document/10750042
+        - name: "arXiv"
+          url: https://arxiv.org/abs/2503.11145
+        - name: "Code"
+          url: https://github.com/nubot-nudt/SG-SLAM
 
     - title:   "Diffusion-Based Point Cloud Super-Resolution for mmWave Radar Data"
       author:  "Kai Luan, Chenghao Shi, **Neng Wang**, Yuwei Cheng, Huimin Lu, Xieyuanli Chen"
@@ -97,8 +112,35 @@ pubs:
           url:  https://ieeexplore.ieee.org/document/10974572
         - name: "Code"
           url: https://github.com/nubot-nudt/RadarSEFMOS
+    
+    - title:   "BEVDiffLoc: End-to-End LiDAR Global Localization in BEV View based on Diffusion Model"
+      author:  "Ziyue Wang, Chenghao Shi, **Neng Wang**, Qinghua Yu, Xieyuanli Chen, Huimin Lu"
+      journal: "Proceedings of the IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)"
+      year:    "2025"
+      image:   "/images/BEVDIffLoc.gif"
+      media:
+        - name: "Paper"
+          # url:  https://ieeexplore.ieee.org/document/10974572
+        - name: "arXiv"
+          url: https://arxiv.org/abs/2503.11372
+        - name: "Code"
+          url: https://github.com/nubot-nudt/BEVDiffLoc
+
+    - title:   "Efficient Instance Motion-Aware Point Cloud Scene Prediction"
+      author:  "Yiming Fang, Xieyuanli Chen, **Neng Wang**, Kaihong Huang, Hesheng Wang, Huimin Lu"
+      journal: "Proceedings of the IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)"
+      year:    "2025"
+      image:   "/images/IMPNet.gif"
+      media:
+        - name: "Paper"
+          # url:  https://ieeexplore.ieee.org/document/10974572
+        - name: "Code"
+          url: https://github.com/nubot-nudt/IMPNet
+
 news:
     shown:
+      - time: Jun, 2025
+        note: 3 paper is accepted to IROS 2025 &#128079;
       - time: May, 2025
         note: Our paper <a href="https://github.com/nubot-nudt/SegNet4D" target="_blank">SegNet4D</a> is accepted to T-ASE 2025 &#128079;
       - time: April, 2025
