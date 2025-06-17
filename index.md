@@ -140,7 +140,7 @@ pubs:
 news:
     shown:
       - time: Jun, 2025
-        note: 3 paper is accepted to IROS 2025 &#128079;
+        note: 3 paper are accepted to IROS 2025 &#128079;
       - time: May, 2025
         note: Our paper <a href="https://github.com/nubot-nudt/SegNet4D" target="_blank">SegNet4D</a> is accepted to T-ASE 2025 &#128079;
       - time: Apr, 2025
