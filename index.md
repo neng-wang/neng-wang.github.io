@@ -76,7 +76,7 @@ pubs:
           url: https://github.com/nubot-nudt/SegNet4D
 
     - title:   "Leveraging Semantic Graphs for Efficient and Robust LiDAR SLAM"
-      author:  "**Neng Wang**, Huimin Lu, Zhiqiang Zheng, Hesheng Wang, Yun-Hui Liu, Xieyuanli Chen"
+      author:  "**Neng Wang**, Huimin Lu, Zhiqiang Zheng, Yun-Hui Liu, Xieyuanli Chen"
       journal: "Proceedings of the IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)"
       year:    "2025"
       image:   "/SG-SLAM/static/videos/graph_slam.gif"
